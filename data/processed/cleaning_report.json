@@ -1,0 +1,23 @@
+{
+    "input_file": "Electronic_Sales.csv",
+    "output_file": "electronic_sales_clean.csv",
+    "rows_input": 185950,
+    "rows_output": 185686,
+    "rows_removed": 264,
+    "columns_input": 11,
+    "columns_output": 10,
+    "removed_columns": [
+        "Unnamed: 0"
+    ],
+    "duplicate_group_detected": 264,
+    "duplicate_excess_row_removed": 264,
+    "missing_values_after_cleaning": 0,
+    "month_mismatch": 0,
+    "hour_mismatch": 0,
+    "sales_mismatch": 0,
+    "january_2020_row_retained": 34,
+    "minimum_order_date": "2019-01-01T03:07:00",
+    "maxmium_order_date": "2020-01-01T05:13:00",
+    "deduplication_assumption": "Fully identical business records are treated as duplicate entries; one row per group is retained.",
+    "status": "PASSED"
+}

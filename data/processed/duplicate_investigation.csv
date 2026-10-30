@@ -1,0 +1,529 @@
+source_unnamed_index,Order ID,Product,Quantity Ordered,Price Each,Order Date,Purchase Address,Month,Sales,City,Hour
+439,296081,Flatscreen TV,1,300.0,2019-12-30 16:52:00,"970 Sunset St, Austin, TX 73301",12,300.0,Austin,16
+440,296081,Flatscreen TV,1,300.0,2019-12-30 16:52:00,"970 Sunset St, Austin, TX 73301",12,300.0,Austin,16
+1734,297311,Bose SoundSport Headphones,1,99.99,2019-12-07 07:30:00,"858 Willow St, Los Angeles, CA 90001",12,99.99,Los Angeles,7
+1735,297311,Bose SoundSport Headphones,1,99.99,2019-12-07 07:30:00,"858 Willow St, Los Angeles, CA 90001",12,99.99,Los Angeles,7
+2821,298358,Apple Airpods Headphones,1,150.0,2019-12-04 15:57:00,"482 8th St, San Francisco, CA 94016",12,150.0,San Francisco,15
+2822,298358,Apple Airpods Headphones,1,150.0,2019-12-04 15:57:00,"482 8th St, San Francisco, CA 94016",12,150.0,San Francisco,15
+3130,298657,Lightning Charging Cable,1,14.95,2019-12-01 18:22:00,"428 12th St, Atlanta, GA 30301",12,14.95,Atlanta,18
+3131,298657,Lightning Charging Cable,1,14.95,2019-12-01 18:22:00,"428 12th St, Atlanta, GA 30301",12,14.95,Atlanta,18
+3376,298883,Wired Headphones,1,11.99,2019-12-28 18:07:00,"516 Willow St, Los Angeles, CA 90001",12,11.99,Los Angeles,18
+3377,298883,Wired Headphones,1,11.99,2019-12-28 18:07:00,"516 Willow St, Los Angeles, CA 90001",12,11.99,Los Angeles,18
+3485,298988,Wired Headphones,1,11.99,2019-12-26 16:11:00,"528 8th St, Austin, TX 73301",12,11.99,Austin,16
+3486,298988,Wired Headphones,1,11.99,2019-12-26 16:11:00,"528 8th St, Austin, TX 73301",12,11.99,Austin,16
+4649,300085,AA Batteries (4-pack),1,3.84,2019-12-17 14:01:00,"601 Spruce St, Boston, MA 02215",12,3.84,Boston,14
+4650,300085,AA Batteries (4-pack),1,3.84,2019-12-17 14:01:00,"601 Spruce St, Boston, MA 02215",12,3.84,Boston,14
+4685,300119,Wired Headphones,1,11.99,2019-12-30 13:22:00,"533 Jackson St, Seattle, WA 98101",12,11.99,Seattle,13
+4686,300119,Wired Headphones,1,11.99,2019-12-30 13:22:00,"533 Jackson St, Seattle, WA 98101",12,11.99,Seattle,13
+4695,300127,Wired Headphones,1,11.99,2019-12-10 08:55:00,"385 Center St, Dallas, TX 75001",12,11.99,Dallas,8
+4696,300127,Wired Headphones,1,11.99,2019-12-10 08:55:00,"385 Center St, Dallas, TX 75001",12,11.99,Dallas,8
+6319,301693,AAA Batteries (4-pack),1,2.99,2019-12-20 16:44:00,"536 Spruce St, San Francisco, CA 94016",12,2.99,San Francisco,16
+6320,301693,AAA Batteries (4-pack),1,2.99,2019-12-20 16:44:00,"536 Spruce St, San Francisco, CA 94016",12,2.99,San Francisco,16
+6410,301780,AA Batteries (4-pack),1,3.84,2019-12-09 00:54:00,"985 South St, San Francisco, CA 94016",12,3.84,San Francisco,0
+6411,301780,AA Batteries (4-pack),1,3.84,2019-12-09 00:54:00,"985 South St, San Francisco, CA 94016",12,3.84,San Francisco,0
+7529,302846,Lightning Charging Cable,1,14.95,2019-12-22 18:54:00,"489 9th St, Boston, MA 02215",12,14.95,Boston,18
+7530,302846,Lightning Charging Cable,1,14.95,2019-12-22 18:54:00,"489 9th St, Boston, MA 02215",12,14.95,Boston,18
+8509,303777,Apple Airpods Headphones,1,150.0,2019-12-30 15:35:00,"75 Washington St, Los Angeles, CA 90001",12,150.0,Los Angeles,15
+8510,303777,Apple Airpods Headphones,1,150.0,2019-12-30 15:35:00,"75 Washington St, Los Angeles, CA 90001",12,150.0,Los Angeles,15
+9135,304375,Lightning Charging Cable,1,14.95,2019-12-13 00:38:00,"272 North St, Los Angeles, CA 90001",12,14.95,Los Angeles,0
+9136,304375,Lightning Charging Cable,1,14.95,2019-12-13 00:38:00,"272 North St, Los Angeles, CA 90001",12,14.95,Los Angeles,0
+9297,304531,Wired Headphones,1,11.99,2019-12-27 00:44:00,"306 Jackson St, Los Angeles, CA 90001",12,11.99,Los Angeles,0
+9298,304531,Wired Headphones,1,11.99,2019-12-27 00:44:00,"306 Jackson St, Los Angeles, CA 90001",12,11.99,Los Angeles,0
+9541,304761,USB-C Charging Cable,1,11.95,2019-12-22 09:51:00,"506 8th St, San Francisco, CA 94016",12,11.95,San Francisco,9
+9542,304761,USB-C Charging Cable,1,11.95,2019-12-22 09:51:00,"506 8th St, San Francisco, CA 94016",12,11.95,San Francisco,9
+10231,305423,Wired Headphones,1,11.99,2019-12-31 10:58:00,"702 Chestnut St, San Francisco, CA 94016",12,11.99,San Francisco,10
+10232,305423,Wired Headphones,1,11.99,2019-12-31 10:58:00,"702 Chestnut St, San Francisco, CA 94016",12,11.99,San Francisco,10
+10629,305804,34in Ultrawide Monitor,1,379.99,2019-12-15 21:53:00,"445 Main St, San Francisco, CA 94016",12,379.99,San Francisco,21
+10630,305804,34in Ultrawide Monitor,1,379.99,2019-12-15 21:53:00,"445 Main St, San Francisco, CA 94016",12,379.99,San Francisco,21
+10759,305928,ThinkPad Laptop,1,999.99,2019-12-08 16:33:00,"637 North St, Los Angeles, CA 90001",12,999.99,Los Angeles,16
+10760,305928,ThinkPad Laptop,1,999.99,2019-12-08 16:33:00,"637 North St, Los Angeles, CA 90001",12,999.99,Los Angeles,16
+10788,305954,Bose SoundSport Headphones,1,99.99,2019-12-13 11:57:00,"289 Pine St, Boston, MA 02215",12,99.99,Boston,11
+10789,305954,Bose SoundSport Headphones,1,99.99,2019-12-13 11:57:00,"289 Pine St, Boston, MA 02215",12,99.99,Boston,11
+11157,306308,Flatscreen TV,1,300.0,2019-12-13 18:00:00,"960 Hill St, Seattle, WA 98101",12,300.0,Seattle,18
+11158,306308,Flatscreen TV,1,300.0,2019-12-13 18:00:00,"960 Hill St, Seattle, WA 98101",12,300.0,Seattle,18
+11312,306458,27in 4K Gaming Monitor,1,389.99,2019-12-22 11:27:00,"641 West St, Atlanta, GA 30301",12,389.99,Atlanta,11
+11313,306458,27in 4K Gaming Monitor,1,389.99,2019-12-22 11:27:00,"641 West St, Atlanta, GA 30301",12,389.99,Atlanta,11
+11341,306485,Lightning Charging Cable,1,14.95,2019-12-01 21:57:00,"337 9th St, San Francisco, CA 94016",12,14.95,San Francisco,21
+11342,306485,Lightning Charging Cable,1,14.95,2019-12-01 21:57:00,"337 9th St, San Francisco, CA 94016",12,14.95,San Francisco,21
+12007,307114,Apple Airpods Headphones,1,150.0,2019-12-13 16:17:00,"512 Maple St, Portland, OR 97035",12,150.0,Portland,16
+12008,307114,Apple Airpods Headphones,1,150.0,2019-12-13 16:17:00,"512 Maple St, Portland, OR 97035",12,150.0,Portland,16
+12779,307861,Lightning Charging Cable,1,14.95,2019-12-29 13:01:00,"124 Cherry St, San Francisco, CA 94016",12,14.95,San Francisco,13
+12780,307861,Lightning Charging Cable,1,14.95,2019-12-29 13:01:00,"124 Cherry St, San Francisco, CA 94016",12,14.95,San Francisco,13
+12844,307923,Lightning Charging Cable,1,14.95,2019-12-07 07:56:00,"526 13th St, Los Angeles, CA 90001",12,14.95,Los Angeles,7
+12845,307923,Lightning Charging Cable,1,14.95,2019-12-07 07:56:00,"526 13th St, Los Angeles, CA 90001",12,14.95,Los Angeles,7
+13305,308362,AAA Batteries (4-pack),1,2.99,2019-12-31 10:18:00,"914 Pine St, San Francisco, CA 94016",12,2.99,San Francisco,10
+13306,308362,AAA Batteries (4-pack),1,2.99,2019-12-31 10:18:00,"914 Pine St, San Francisco, CA 94016",12,2.99,San Francisco,10
+13632,308671,27in 4K Gaming Monitor,1,389.99,2019-12-28 10:52:00,"773 Johnson St, San Francisco, CA 94016",12,389.99,San Francisco,10
+13633,308671,27in 4K Gaming Monitor,1,389.99,2019-12-28 10:52:00,"773 Johnson St, San Francisco, CA 94016",12,389.99,San Francisco,10
+13982,309008,Apple Airpods Headphones,1,150.0,2019-12-23 22:13:00,"161 Pine St, Austin, TX 73301",12,150.0,Austin,22
+13983,309008,Apple Airpods Headphones,1,150.0,2019-12-23 22:13:00,"161 Pine St, Austin, TX 73301",12,150.0,Austin,22
+14023,309045,Apple Airpods Headphones,1,150.0,2019-12-14 20:00:00,"358 Chestnut St, New York City, NY 10001",12,150.0,New York City,20
+14024,309045,Apple Airpods Headphones,1,150.0,2019-12-14 20:00:00,"358 Chestnut St, New York City, NY 10001",12,150.0,New York City,20
+15553,310524,Bose SoundSport Headphones,1,99.99,2019-12-21 10:58:00,"319 8th St, Portland, OR 97035",12,99.99,Portland,10
+15554,310524,Bose SoundSport Headphones,1,99.99,2019-12-21 10:58:00,"319 8th St, Portland, OR 97035",12,99.99,Portland,10
+17955,312825,Bose SoundSport Headphones,1,99.99,2019-12-03 23:33:00,"615 1st St, New York City, NY 10001",12,99.99,New York City,23
+17956,312825,Bose SoundSport Headphones,1,99.99,2019-12-03 23:33:00,"615 1st St, New York City, NY 10001",12,99.99,New York City,23
+18576,313410,Wired Headphones,1,11.99,2019-12-27 19:47:00,"6 Hill St, San Francisco, CA 94016",12,11.99,San Francisco,19
+18577,313410,Wired Headphones,1,11.99,2019-12-27 19:47:00,"6 Hill St, San Francisco, CA 94016",12,11.99,San Francisco,19
+18906,313728,Wired Headphones,1,11.99,2019-12-28 14:40:00,"872 7th St, New York City, NY 10001",12,11.99,New York City,14
+18907,313728,Wired Headphones,1,11.99,2019-12-28 14:40:00,"872 7th St, New York City, NY 10001",12,11.99,New York City,14
+19830,314614,AA Batteries (4-pack),1,3.84,2019-12-02 14:47:00,"20 Lake St, San Francisco, CA 94016",12,3.84,San Francisco,14
+19831,314614,AA Batteries (4-pack),1,3.84,2019-12-02 14:47:00,"20 Lake St, San Francisco, CA 94016",12,3.84,San Francisco,14
+19893,314675,AA Batteries (4-pack),1,3.84,2019-12-26 09:01:00,"927 13th St, San Francisco, CA 94016",12,3.84,San Francisco,9
+19894,314675,AA Batteries (4-pack),1,3.84,2019-12-26 09:01:00,"927 13th St, San Francisco, CA 94016",12,3.84,San Francisco,9
+20451,315204,Wired Headphones,1,11.99,2019-12-12 12:41:00,"680 6th St, San Francisco, CA 94016",12,11.99,San Francisco,12
+20452,315204,Wired Headphones,1,11.99,2019-12-12 12:41:00,"680 6th St, San Francisco, CA 94016",12,11.99,San Francisco,12
+21239,315955,ThinkPad Laptop,1,999.99,2019-12-26 17:28:00,"588 Chestnut St, Seattle, WA 98101",12,999.99,Seattle,17
+21240,315955,ThinkPad Laptop,1,999.99,2019-12-26 17:28:00,"588 Chestnut St, Seattle, WA 98101",12,999.99,Seattle,17
+21466,316173,AAA Batteries (4-pack),1,2.99,2019-12-22 22:44:00,"907 Sunset St, Portland, OR 97035",12,2.99,Portland,22
+21467,316173,AAA Batteries (4-pack),1,2.99,2019-12-22 22:44:00,"907 Sunset St, Portland, OR 97035",12,2.99,Portland,22
+23351,317971,AA Batteries (4-pack),1,3.84,2019-12-17 18:39:00,"250 Chestnut St, San Francisco, CA 94016",12,3.84,San Francisco,18
+23352,317971,AA Batteries (4-pack),1,3.84,2019-12-17 18:39:00,"250 Chestnut St, San Francisco, CA 94016",12,3.84,San Francisco,18
+30,176585,Bose SoundSport Headphones,1,99.99,2019-04-07 11:31:00,"823 Highland St, Boston, MA 02215",4,99.99,Boston,11
+31,176585,Bose SoundSport Headphones,1,99.99,2019-04-07 11:31:00,"823 Highland St, Boston, MA 02215",4,99.99,Boston,11
+1301,177795,Apple Airpods Headphones,1,150.0,2019-04-27 19:45:00,"740 14th St, Seattle, WA 98101",4,150.0,Seattle,19
+1302,177795,Apple Airpods Headphones,1,150.0,2019-04-27 19:45:00,"740 14th St, Seattle, WA 98101",4,150.0,Seattle,19
+1682,178158,USB-C Charging Cable,1,11.95,2019-04-28 21:13:00,"197 Center St, San Francisco, CA 94016",4,11.95,San Francisco,21
+1684,178158,USB-C Charging Cable,1,11.95,2019-04-28 21:13:00,"197 Center St, San Francisco, CA 94016",4,11.95,San Francisco,21
+3804,180207,Apple Airpods Headphones,1,150.0,2019-04-13 01:46:00,"196 7th St, Los Angeles, CA 90001",4,150.0,Los Angeles,1
+3805,180207,Apple Airpods Headphones,1,150.0,2019-04-13 01:46:00,"196 7th St, Los Angeles, CA 90001",4,150.0,Los Angeles,1
+4195,180576,Lightning Charging Cable,1,14.95,2019-04-18 17:23:00,"431 Park St, Dallas, TX 75001",4,14.95,Dallas,17
+4196,180576,Lightning Charging Cable,1,14.95,2019-04-18 17:23:00,"431 Park St, Dallas, TX 75001",4,14.95,Dallas,17
+4375,180746,AAA Batteries (4-pack),1,2.99,2019-04-30 12:05:00,"398 West St, New York City, NY 10001",4,2.99,New York City,12
+4376,180746,AAA Batteries (4-pack),1,2.99,2019-04-30 12:05:00,"398 West St, New York City, NY 10001",4,2.99,New York City,12
+4449,180817,Lightning Charging Cable,1,14.95,2019-04-13 18:33:00,"563 13th St, Los Angeles, CA 90001",4,14.95,Los Angeles,18
+4450,180817,Lightning Charging Cable,1,14.95,2019-04-13 18:33:00,"563 13th St, Los Angeles, CA 90001",4,14.95,Los Angeles,18
+4733,181084,Flatscreen TV,1,300.0,2019-04-07 21:36:00,"1 Walnut St, Boston, MA 02215",4,300.0,Boston,21
+4734,181084,Flatscreen TV,1,300.0,2019-04-07 21:36:00,"1 Walnut St, Boston, MA 02215",4,300.0,Boston,21
+4905,181246,Wired Headphones,1,11.99,2019-04-09 13:58:00,"342 Hickory St, San Francisco, CA 94016",4,11.99,San Francisco,13
+4906,181246,Wired Headphones,1,11.99,2019-04-09 13:58:00,"342 Hickory St, San Francisco, CA 94016",4,11.99,San Francisco,13
+5772,182077,AAA Batteries (4-pack),1,2.99,2019-04-13 22:08:00,"730 4th St, New York City, NY 10001",4,2.99,New York City,22
+5773,182077,AAA Batteries (4-pack),1,2.99,2019-04-13 22:08:00,"730 4th St, New York City, NY 10001",4,2.99,New York City,22
+6241,182523,Lightning Charging Cable,1,14.95,2019-04-24 21:16:00,"990 River St, Boston, MA 02215",4,14.95,Boston,21
+6242,182523,Lightning Charging Cable,1,14.95,2019-04-24 21:16:00,"990 River St, Boston, MA 02215",4,14.95,Boston,21
+6645,182904,Lightning Charging Cable,1,14.95,2019-04-09 22:15:00,"410 Wilson St, Atlanta, GA 30301",4,14.95,Atlanta,22
+6646,182904,Lightning Charging Cable,1,14.95,2019-04-09 22:15:00,"410 Wilson St, Atlanta, GA 30301",4,14.95,Atlanta,22
+7371,183587,AAA Batteries (4-pack),1,2.99,2019-04-15 00:21:00,"384 Sunset St, Los Angeles, CA 90001",4,2.99,Los Angeles,0
+7372,183587,AAA Batteries (4-pack),1,2.99,2019-04-15 00:21:00,"384 Sunset St, Los Angeles, CA 90001",4,2.99,Los Angeles,0
+8539,184717,USB-C Charging Cable,1,11.95,2019-04-04 10:17:00,"439 Forest St, Atlanta, GA 30301",4,11.95,Atlanta,10
+8540,184717,USB-C Charging Cable,1,11.95,2019-04-04 10:17:00,"439 Forest St, Atlanta, GA 30301",4,11.95,Atlanta,10
+9043,185193,Lightning Charging Cable,1,14.95,2019-04-16 21:38:00,"714 13th St, San Francisco, CA 94016",4,14.95,San Francisco,21
+9044,185193,Lightning Charging Cable,1,14.95,2019-04-16 21:38:00,"714 13th St, San Francisco, CA 94016",4,14.95,San Francisco,21
+9898,186008,Bose SoundSport Headphones,1,99.99,2019-04-17 19:36:00,"432 Park St, New York City, NY 10001",4,99.99,New York City,19
+9899,186008,Bose SoundSport Headphones,1,99.99,2019-04-17 19:36:00,"432 Park St, New York City, NY 10001",4,99.99,New York City,19
+11333,187379,USB-C Charging Cable,1,11.95,2019-04-10 19:06:00,"504 10th St, Los Angeles, CA 90001",4,11.95,Los Angeles,19
+11334,187379,USB-C Charging Cable,1,11.95,2019-04-10 19:06:00,"504 10th St, Los Angeles, CA 90001",4,11.95,Los Angeles,19
+12870,188827,USB-C Charging Cable,1,11.95,2019-04-17 18:17:00,"900 Spruce St, New York City, NY 10001",4,11.95,New York City,18
+12871,188827,USB-C Charging Cable,1,11.95,2019-04-17 18:17:00,"900 Spruce St, New York City, NY 10001",4,11.95,New York City,18
+14201,190099,AA Batteries (4-pack),1,3.84,2019-04-18 08:07:00,"845 Sunset St, Los Angeles, CA 90001",4,3.84,Los Angeles,8
+14202,190099,AA Batteries (4-pack),1,3.84,2019-04-18 08:07:00,"845 Sunset St, Los Angeles, CA 90001",4,3.84,Los Angeles,8
+14676,190553,Lightning Charging Cable,1,14.95,2019-04-10 17:38:00,"548 Madison St, New York City, NY 10001",4,14.95,New York City,17
+14677,190553,Lightning Charging Cable,1,14.95,2019-04-10 17:38:00,"548 Madison St, New York City, NY 10001",4,14.95,New York City,17
+17163,192939,34in Ultrawide Monitor,1,379.99,2019-04-29 21:07:00,"519 Adams St, Seattle, WA 98101",4,379.99,Seattle,21
+17164,192939,34in Ultrawide Monitor,1,379.99,2019-04-29 21:07:00,"519 Adams St, Seattle, WA 98101",4,379.99,Seattle,21
+18193,193916,20in Monitor,1,109.99,2019-04-18 12:59:00,"653 Cherry St, Dallas, TX 75001",4,109.99,Dallas,12
+18194,193916,20in Monitor,1,109.99,2019-04-18 12:59:00,"653 Cherry St, Dallas, TX 75001",4,109.99,Dallas,12
+431,150917,Lightning Charging Cable,1,14.95,2019-02-06 16:07:00,"111 10th St, Austin, TX 73301",2,14.95,Austin,16
+432,150917,Lightning Charging Cable,1,14.95,2019-02-06 16:07:00,"111 10th St, Austin, TX 73301",2,14.95,Austin,16
+440,150925,iPhone,1,700.0,2019-02-07 17:43:00,"784 Elm St, Boston, MA 02215",2,700.0,Boston,17
+442,150925,iPhone,1,700.0,2019-02-07 17:43:00,"784 Elm St, Boston, MA 02215",2,700.0,Boston,17
+460,150943,USB-C Charging Cable,1,11.95,2019-02-06 19:13:00,"759 1st St, Austin, TX 73301",2,11.95,Austin,19
+461,150943,USB-C Charging Cable,1,11.95,2019-02-06 19:13:00,"759 1st St, Austin, TX 73301",2,11.95,Austin,19
+547,151024,Wired Headphones,1,11.99,2019-02-19 08:39:00,"35 Pine St, Portland, OR 97035",2,11.99,Portland,8
+548,151024,Wired Headphones,1,11.99,2019-02-19 08:39:00,"35 Pine St, Portland, OR 97035",2,11.99,Portland,8
+1163,151616,USB-C Charging Cable,1,11.95,2019-02-25 19:29:00,"666 Meadow St, Boston, MA 02215",2,11.95,Boston,19
+1164,151616,USB-C Charging Cable,1,11.95,2019-02-25 19:29:00,"666 Meadow St, Boston, MA 02215",2,11.95,Boston,19
+1223,151673,Wired Headphones,1,11.99,2019-02-10 21:52:00,"504 Center St, Dallas, TX 75001",2,11.99,Dallas,21
+1224,151673,Wired Headphones,1,11.99,2019-02-10 21:52:00,"504 Center St, Dallas, TX 75001",2,11.99,Dallas,21
+1416,151856,USB-C Charging Cable,1,11.95,2019-02-06 12:11:00,"475 Jackson St, San Francisco, CA 94016",2,11.95,San Francisco,12
+1417,151856,USB-C Charging Cable,1,11.95,2019-02-06 12:11:00,"475 Jackson St, San Francisco, CA 94016",2,11.95,San Francisco,12
+1917,152330,Bose SoundSport Headphones,1,99.99,2019-02-25 18:53:00,"827 Dogwood St, Los Angeles, CA 90001",2,99.99,Los Angeles,18
+1918,152330,Bose SoundSport Headphones,1,99.99,2019-02-25 18:53:00,"827 Dogwood St, Los Angeles, CA 90001",2,99.99,Los Angeles,18
+2936,153304,Wired Headphones,1,11.99,2019-02-12 20:08:00,"74 Meadow St, Austin, TX 73301",2,11.99,Austin,20
+2937,153304,Wired Headphones,1,11.99,2019-02-12 20:08:00,"74 Meadow St, Austin, TX 73301",2,11.99,Austin,20
+2948,153315,Wired Headphones,1,11.99,2019-02-13 14:47:00,"953 Jefferson St, Atlanta, GA 30301",2,11.99,Atlanta,14
+2949,153315,Wired Headphones,1,11.99,2019-02-13 14:47:00,"953 Jefferson St, Atlanta, GA 30301",2,11.99,Atlanta,14
+4445,154737,Lightning Charging Cable,1,14.95,2019-02-01 17:59:00,"513 10th St, San Francisco, CA 94016",2,14.95,San Francisco,17
+4446,154737,Lightning Charging Cable,1,14.95,2019-02-01 17:59:00,"513 10th St, San Francisco, CA 94016",2,14.95,San Francisco,17
+4456,154747,27in 4K Gaming Monitor,1,389.99,2019-02-01 22:46:00,"367 Cedar St, Austin, TX 73301",2,389.99,Austin,22
+4457,154747,27in 4K Gaming Monitor,1,389.99,2019-02-01 22:46:00,"367 Cedar St, Austin, TX 73301",2,389.99,Austin,22
+5449,155697,AA Batteries (4-pack),1,3.84,2019-02-13 15:17:00,"961 Spruce St, Boston, MA 02215",2,3.84,Boston,15
+5450,155697,AA Batteries (4-pack),1,3.84,2019-02-13 15:17:00,"961 Spruce St, Boston, MA 02215",2,3.84,Boston,15
+5879,156109,Bose SoundSport Headphones,1,99.99,2019-02-18 09:18:00,"450 Jackson St, Boston, MA 02215",2,99.99,Boston,9
+5880,156109,Bose SoundSport Headphones,1,99.99,2019-02-18 09:18:00,"450 Jackson St, Boston, MA 02215",2,99.99,Boston,9
+6024,156247,AAA Batteries (4-pack),1,2.99,2019-02-09 07:29:00,"511 Dogwood St, Los Angeles, CA 90001",2,2.99,Los Angeles,7
+6025,156247,AAA Batteries (4-pack),1,2.99,2019-02-09 07:29:00,"511 Dogwood St, Los Angeles, CA 90001",2,2.99,Los Angeles,7
+8110,158236,AA Batteries (4-pack),1,3.84,2019-02-19 09:49:00,"319 West St, San Francisco, CA 94016",2,3.84,San Francisco,9
+8111,158236,AA Batteries (4-pack),1,3.84,2019-02-19 09:49:00,"319 West St, San Francisco, CA 94016",2,3.84,San Francisco,9
+8733,158841,34in Ultrawide Monitor,1,379.99,2019-02-01 23:16:00,"786 Willow St, Boston, MA 02215",2,379.99,Boston,23
+8734,158841,34in Ultrawide Monitor,1,379.99,2019-02-01 23:16:00,"786 Willow St, Boston, MA 02215",2,379.99,Boston,23
+11573,161567,Apple Airpods Headphones,1,150.0,2019-02-10 11:42:00,"413 Walnut St, San Francisco, CA 94016",2,150.0,San Francisco,11
+11574,161567,Apple Airpods Headphones,1,150.0,2019-02-10 11:42:00,"413 Walnut St, San Francisco, CA 94016",2,150.0,San Francisco,11
+340,162332,Flatscreen TV,1,300.0,2019-03-20 14:23:00,"925 10th St, Atlanta, GA 30301",3,300.0,Atlanta,14
+341,162332,Flatscreen TV,1,300.0,2019-03-20 14:23:00,"925 10th St, Atlanta, GA 30301",3,300.0,Atlanta,14
+1065,163018,AAA Batteries (4-pack),1,2.99,2019-03-17 14:10:00,"694 Cedar St, Seattle, WA 98101",3,2.99,Seattle,14
+1066,163018,AAA Batteries (4-pack),1,2.99,2019-03-17 14:10:00,"694 Cedar St, Seattle, WA 98101",3,2.99,Seattle,14
+2141,164046,Bose SoundSport Headphones,1,99.99,2019-03-17 20:44:00,"837 Dogwood St, San Francisco, CA 94016",3,99.99,San Francisco,20
+2142,164046,Bose SoundSport Headphones,1,99.99,2019-03-17 20:44:00,"837 Dogwood St, San Francisco, CA 94016",3,99.99,San Francisco,20
+2965,164825,Lightning Charging Cable,1,14.95,2019-03-23 18:51:00,"34 Pine St, San Francisco, CA 94016",3,14.95,San Francisco,18
+2966,164825,Lightning Charging Cable,1,14.95,2019-03-23 18:51:00,"34 Pine St, San Francisco, CA 94016",3,14.95,San Francisco,18
+3337,165180,Lightning Charging Cable,1,14.95,2019-03-24 12:57:00,"597 5th St, Seattle, WA 98101",3,14.95,Seattle,12
+3338,165180,Lightning Charging Cable,1,14.95,2019-03-24 12:57:00,"597 5th St, Seattle, WA 98101",3,14.95,Seattle,12
+3650,165481,Apple Airpods Headphones,1,150.0,2019-03-19 18:55:00,"422 4th St, Los Angeles, CA 90001",3,150.0,Los Angeles,18
+3651,165481,Apple Airpods Headphones,1,150.0,2019-03-19 18:55:00,"422 4th St, Los Angeles, CA 90001",3,150.0,Los Angeles,18
+3847,165668,34in Ultrawide Monitor,1,379.99,2019-03-27 11:28:00,"386 Jackson St, San Francisco, CA 94016",3,379.99,San Francisco,11
+3848,165668,34in Ultrawide Monitor,1,379.99,2019-03-27 11:28:00,"386 Jackson St, San Francisco, CA 94016",3,379.99,San Francisco,11
+4129,165934,USB-C Charging Cable,1,11.95,2019-03-24 08:25:00,"521 Forest St, Seattle, WA 98101",3,11.95,Seattle,8
+4130,165934,USB-C Charging Cable,1,11.95,2019-03-24 08:25:00,"521 Forest St, Seattle, WA 98101",3,11.95,Seattle,8
+5214,166981,AAA Batteries (4-pack),1,2.99,2019-03-31 01:40:00,"557 Wilson St, Dallas, TX 75001",3,2.99,Dallas,1
+5215,166981,AAA Batteries (4-pack),1,2.99,2019-03-31 01:40:00,"557 Wilson St, Dallas, TX 75001",3,2.99,Dallas,1
+5684,167429,Lightning Charging Cable,1,14.95,2019-03-27 05:05:00,"430 Lake St, San Francisco, CA 94016",3,14.95,San Francisco,5
+5685,167429,Lightning Charging Cable,1,14.95,2019-03-27 05:05:00,"430 Lake St, San Francisco, CA 94016",3,14.95,San Francisco,5
+5922,167654,27in FHD Monitor,1,149.99,2019-03-29 15:10:00,"654 5th St, Portland, OR 97035",3,149.99,Portland,15
+5923,167654,27in FHD Monitor,1,149.99,2019-03-29 15:10:00,"654 5th St, Portland, OR 97035",3,149.99,Portland,15
+7032,168724,Apple Airpods Headphones,1,150.0,2019-03-13 11:25:00,"552 Park St, Los Angeles, CA 90001",3,150.0,Los Angeles,11
+7033,168724,Apple Airpods Headphones,1,150.0,2019-03-13 11:25:00,"552 Park St, Los Angeles, CA 90001",3,150.0,Los Angeles,11
+7087,168777,Lightning Charging Cable,1,14.95,2019-03-07 14:55:00,"247 Pine St, San Francisco, CA 94016",3,14.95,San Francisco,14
+7088,168777,Lightning Charging Cable,1,14.95,2019-03-07 14:55:00,"247 Pine St, San Francisco, CA 94016",3,14.95,San Francisco,14
+7202,168888,AA Batteries (4-pack),1,3.84,2019-03-18 14:26:00,"815 Hill St, Los Angeles, CA 90001",3,3.84,Los Angeles,14
+7203,168888,AA Batteries (4-pack),1,3.84,2019-03-18 14:26:00,"815 Hill St, Los Angeles, CA 90001",3,3.84,Los Angeles,14
+7949,169600,Wired Headphones,1,11.99,2019-03-10 11:12:00,"839 Cedar St, New York City, NY 10001",3,11.99,New York City,11
+7950,169600,Wired Headphones,1,11.99,2019-03-10 11:12:00,"839 Cedar St, New York City, NY 10001",3,11.99,New York City,11
+8010,169659,Bose SoundSport Headphones,1,99.99,2019-03-22 16:56:00,"680 Forest St, Seattle, WA 98101",3,99.99,Seattle,16
+8011,169659,Bose SoundSport Headphones,1,99.99,2019-03-22 16:56:00,"680 Forest St, Seattle, WA 98101",3,99.99,Seattle,16
+8486,170109,Apple Airpods Headphones,1,150.0,2019-03-16 13:35:00,"462 Meadow St, Seattle, WA 98101",3,150.0,Seattle,13
+8487,170109,Apple Airpods Headphones,1,150.0,2019-03-16 13:35:00,"462 Meadow St, Seattle, WA 98101",3,150.0,Seattle,13
+8548,170168,USB-C Charging Cable,1,11.95,2019-03-09 16:58:00,"923 13th St, Los Angeles, CA 90001",3,11.95,Los Angeles,16
+8549,170168,USB-C Charging Cable,1,11.95,2019-03-09 16:58:00,"923 13th St, Los Angeles, CA 90001",3,11.95,Los Angeles,16
+9748,171322,20in Monitor,1,109.99,2019-03-15 13:45:00,"357 Meadow St, Portland, ME 04101",3,109.99,Portland,13
+9749,171322,20in Monitor,1,109.99,2019-03-15 13:45:00,"357 Meadow St, Portland, ME 04101",3,109.99,Portland,13
+9800,171373,AA Batteries (4-pack),2,3.84,2019-03-23 22:20:00,"49 Sunset St, Austin, TX 73301",3,7.68,Austin,22
+9801,171373,AA Batteries (4-pack),2,3.84,2019-03-23 22:20:00,"49 Sunset St, Austin, TX 73301",3,7.68,Austin,22
+10612,172155,USB-C Charging Cable,1,11.95,2019-03-11 23:08:00,"712 1st St, New York City, NY 10001",3,11.95,New York City,23
+10613,172155,USB-C Charging Cable,1,11.95,2019-03-11 23:08:00,"712 1st St, New York City, NY 10001",3,11.95,New York City,23
+11916,173388,Bose SoundSport Headphones,1,99.99,2019-03-21 15:31:00,"96 Cherry St, San Francisco, CA 94016",3,99.99,San Francisco,15
+11917,173388,Bose SoundSport Headphones,1,99.99,2019-03-21 15:31:00,"96 Cherry St, San Francisco, CA 94016",3,99.99,San Francisco,15
+13282,174691,Apple Airpods Headphones,1,150.0,2019-03-17 13:22:00,"672 Highland St, Seattle, WA 98101",3,150.0,Seattle,13
+13283,174691,Apple Airpods Headphones,1,150.0,2019-03-17 13:22:00,"672 Highland St, Seattle, WA 98101",3,150.0,Seattle,13
+13575,174972,USB-C Charging Cable,1,11.95,2019-03-26 23:02:00,"389 10th St, New York City, NY 10001",3,11.95,New York City,23
+13576,174972,USB-C Charging Cable,1,11.95,2019-03-26 23:02:00,"389 10th St, New York City, NY 10001",3,11.95,New York City,23
+15203,176537,Apple Airpods Headphones,1,150.0,2019-03-12 07:33:00,"80 Church St, Austin, TX 73301",3,150.0,Austin,7
+15204,176537,Apple Airpods Headphones,1,150.0,2019-03-12 07:33:00,"80 Church St, Austin, TX 73301",3,150.0,Austin,7
+627,237276,Lightning Charging Cable,1,14.95,2019-08-22 10:43:00,"446 2nd St, Boston, MA 02215",8,14.95,Boston,10
+628,237276,Lightning Charging Cable,1,14.95,2019-08-22 10:43:00,"446 2nd St, Boston, MA 02215",8,14.95,Boston,10
+924,237560,USB-C Charging Cable,1,11.95,2019-08-09 00:26:00,"397 Lincoln St, San Francisco, CA 94016",8,11.95,San Francisco,0
+925,237560,USB-C Charging Cable,1,11.95,2019-08-09 00:26:00,"397 Lincoln St, San Francisco, CA 94016",8,11.95,San Francisco,0
+2259,238842,Wired Headphones,1,11.99,2019-08-28 17:59:00,"320 Park St, San Francisco, CA 94016",8,11.99,San Francisco,17
+2260,238842,Wired Headphones,1,11.99,2019-08-28 17:59:00,"320 Park St, San Francisco, CA 94016",8,11.99,San Francisco,17
+4172,240682,27in FHD Monitor,1,149.99,2019-08-12 10:51:00,"869 Jefferson St, Austin, TX 73301",8,149.99,Austin,10
+4173,240682,27in FHD Monitor,1,149.99,2019-08-12 10:51:00,"869 Jefferson St, Austin, TX 73301",8,149.99,Austin,10
+4700,241182,27in 4K Gaming Monitor,1,389.99,2019-08-31 20:22:00,"580 6th St, New York City, NY 10001",8,389.99,New York City,20
+4701,241182,27in 4K Gaming Monitor,1,389.99,2019-08-31 20:22:00,"580 6th St, New York City, NY 10001",8,389.99,New York City,20
+6371,242784,Apple Airpods Headphones,1,150.0,2019-08-08 19:38:00,"583 Hill St, Portland, OR 97035",8,150.0,Portland,19
+6372,242784,Apple Airpods Headphones,1,150.0,2019-08-08 19:38:00,"583 Hill St, Portland, OR 97035",8,150.0,Portland,19
+7372,243728,Macbook Pro Laptop,1,1700.0,2019-08-26 12:57:00,"665 14th St, Los Angeles, CA 90001",8,1700.0,Los Angeles,12
+7373,243728,Macbook Pro Laptop,1,1700.0,2019-08-26 12:57:00,"665 14th St, Los Angeles, CA 90001",8,1700.0,Los Angeles,12
+7614,243958,Lightning Charging Cable,1,14.95,2019-08-03 19:34:00,"314 Dogwood St, Portland, OR 97035",8,14.95,Portland,19
+7615,243958,Lightning Charging Cable,1,14.95,2019-08-03 19:34:00,"314 Dogwood St, Portland, OR 97035",8,14.95,Portland,19
+8421,244727,Wired Headphones,1,11.99,2019-08-29 16:00:00,"36 North St, Los Angeles, CA 90001",8,11.99,Los Angeles,16
+8422,244727,Wired Headphones,1,11.99,2019-08-29 16:00:00,"36 North St, Los Angeles, CA 90001",8,11.99,Los Angeles,16
+9843,246084,Bose SoundSport Headphones,1,99.99,2019-08-17 14:34:00,"731 Cherry St, Dallas, TX 75001",8,99.99,Dallas,14
+9844,246084,Bose SoundSport Headphones,1,99.99,2019-08-17 14:34:00,"731 Cherry St, Dallas, TX 75001",8,99.99,Dallas,14
+9854,246092,USB-C Charging Cable,1,11.95,2019-08-03 09:47:00,"175 Main St, Los Angeles, CA 90001",8,11.95,Los Angeles,9
+9855,246092,USB-C Charging Cable,1,11.95,2019-08-03 09:47:00,"175 Main St, Los Angeles, CA 90001",8,11.95,Los Angeles,9
+10044,246275,Lightning Charging Cable,1,14.95,2019-08-26 00:17:00,"491 Lake St, San Francisco, CA 94016",8,14.95,San Francisco,0
+10045,246275,Lightning Charging Cable,1,14.95,2019-08-26 00:17:00,"491 Lake St, San Francisco, CA 94016",8,14.95,San Francisco,0
+10377,246602,34in Ultrawide Monitor,1,379.99,2019-08-01 14:05:00,"490 Sunset St, Seattle, WA 98101",8,379.99,Seattle,14
+10378,246602,34in Ultrawide Monitor,1,379.99,2019-08-01 14:05:00,"490 Sunset St, Seattle, WA 98101",8,379.99,Seattle,14
+10836,247041,AAA Batteries (4-pack),2,2.99,2019-08-07 16:38:00,"367 2nd St, Los Angeles, CA 90001",8,5.98,Los Angeles,16
+10837,247041,AAA Batteries (4-pack),2,2.99,2019-08-07 16:38:00,"367 2nd St, Los Angeles, CA 90001",8,5.98,Los Angeles,16
+10875,247075,USB-C Charging Cable,1,11.95,2019-08-10 19:18:00,"213 Main St, New York City, NY 10001",8,11.95,New York City,19
+10876,247075,USB-C Charging Cable,1,11.95,2019-08-10 19:18:00,"213 Main St, New York City, NY 10001",8,11.95,New York City,19
+11505,247673,USB-C Charging Cable,1,11.95,2019-08-19 19:27:00,"600 River St, San Francisco, CA 94016",8,11.95,San Francisco,19
+11506,247673,USB-C Charging Cable,1,11.95,2019-08-19 19:27:00,"600 River St, San Francisco, CA 94016",8,11.95,San Francisco,19
+11710,247868,34in Ultrawide Monitor,1,379.99,2019-08-19 07:39:00,"151 Willow St, New York City, NY 10001",8,379.99,New York City,7
+11711,247868,34in Ultrawide Monitor,1,379.99,2019-08-19 07:39:00,"151 Willow St, New York City, NY 10001",8,379.99,New York City,7
+11890,248036,USB-C Charging Cable,1,11.95,2019-08-06 19:56:00,"340 Cherry St, San Francisco, CA 94016",8,11.95,San Francisco,19
+11891,248036,USB-C Charging Cable,1,11.95,2019-08-06 19:56:00,"340 Cherry St, San Francisco, CA 94016",8,11.95,San Francisco,19
+1006,195045,Wired Headphones,1,11.99,2019-05-24 02:22:00,"95 Jefferson St, Atlanta, GA 30301",5,11.99,Atlanta,2
+1007,195045,Wired Headphones,1,11.99,2019-05-24 02:22:00,"95 Jefferson St, Atlanta, GA 30301",5,11.99,Atlanta,2
+1276,195299,Lightning Charging Cable,1,14.95,2019-05-30 19:33:00,"237 North St, Dallas, TX 75001",5,14.95,Dallas,19
+1277,195299,Lightning Charging Cable,1,14.95,2019-05-30 19:33:00,"237 North St, Dallas, TX 75001",5,14.95,Dallas,19
+2463,196429,AAA Batteries (4-pack),1,2.99,2019-05-30 17:30:00,"966 11th St, New York City, NY 10001",5,2.99,New York City,17
+2464,196429,AAA Batteries (4-pack),1,2.99,2019-05-30 17:30:00,"966 11th St, New York City, NY 10001",5,2.99,New York City,17
+3947,197845,USB-C Charging Cable,1,11.95,2019-05-09 15:23:00,"95 Willow St, Dallas, TX 75001",5,11.95,Dallas,15
+3948,197845,USB-C Charging Cable,1,11.95,2019-05-09 15:23:00,"95 Willow St, Dallas, TX 75001",5,11.95,Dallas,15
+4659,198514,USB-C Charging Cable,1,11.95,2019-05-13 18:56:00,"171 Jackson St, Seattle, WA 98101",5,11.95,Seattle,18
+4660,198514,USB-C Charging Cable,1,11.95,2019-05-13 18:56:00,"171 Jackson St, Seattle, WA 98101",5,11.95,Seattle,18
+6164,199948,AAA Batteries (4-pack),1,2.99,2019-05-09 16:02:00,"892 2nd St, Los Angeles, CA 90001",5,2.99,Los Angeles,16
+6165,199948,AAA Batteries (4-pack),1,2.99,2019-05-09 16:02:00,"892 2nd St, Los Angeles, CA 90001",5,2.99,Los Angeles,16
+7905,201606,AA Batteries (4-pack),1,3.84,2019-05-02 14:07:00,"309 Main St, Seattle, WA 98101",5,3.84,Seattle,14
+7906,201606,AA Batteries (4-pack),1,3.84,2019-05-02 14:07:00,"309 Main St, Seattle, WA 98101",5,3.84,Seattle,14
+8032,201727,AAA Batteries (4-pack),1,2.99,2019-05-08 17:00:00,"659 2nd St, New York City, NY 10001",5,2.99,New York City,17
+8033,201727,AAA Batteries (4-pack),1,2.99,2019-05-08 17:00:00,"659 2nd St, New York City, NY 10001",5,2.99,New York City,17
+8513,202186,Bose SoundSport Headphones,1,99.99,2019-05-16 07:09:00,"296 1st St, Los Angeles, CA 90001",5,99.99,Los Angeles,7
+8514,202186,Bose SoundSport Headphones,1,99.99,2019-05-16 07:09:00,"296 1st St, Los Angeles, CA 90001",5,99.99,Los Angeles,7
+8541,202212,Macbook Pro Laptop,1,1700.0,2019-05-25 13:19:00,"10 1st St, San Francisco, CA 94016",5,1700.0,San Francisco,13
+8542,202212,Macbook Pro Laptop,1,1700.0,2019-05-25 13:19:00,"10 1st St, San Francisco, CA 94016",5,1700.0,San Francisco,13
+10277,203850,AAA Batteries (4-pack),1,2.99,2019-05-18 17:17:00,"54 Adams St, Dallas, TX 75001",5,2.99,Dallas,17
+10278,203850,AAA Batteries (4-pack),1,2.99,2019-05-18 17:17:00,"54 Adams St, Dallas, TX 75001",5,2.99,Dallas,17
+11493,205018,USB-C Charging Cable,1,11.95,2019-05-16 22:32:00,"859 Lincoln St, Boston, MA 02215",5,11.95,Boston,22
+11494,205018,USB-C Charging Cable,1,11.95,2019-05-16 22:32:00,"859 Lincoln St, Boston, MA 02215",5,11.95,Boston,22
+13977,207395,USB-C Charging Cable,1,11.95,2019-05-18 07:44:00,"740 Wilson St, San Francisco, CA 94016",5,11.95,San Francisco,7
+13978,207395,USB-C Charging Cable,1,11.95,2019-05-18 07:44:00,"740 Wilson St, San Francisco, CA 94016",5,11.95,San Francisco,7
+14255,207658,Bose SoundSport Headphones,1,99.99,2019-05-07 16:26:00,"581 Johnson St, Dallas, TX 75001",5,99.99,Dallas,16
+14256,207658,Bose SoundSport Headphones,1,99.99,2019-05-07 16:26:00,"581 Johnson St, Dallas, TX 75001",5,99.99,Dallas,16
+287,279069,USB-C Charging Cable,1,11.95,2019-11-14 16:30:00,"593 South St, San Francisco, CA 94016",11,11.95,San Francisco,16
+288,279069,USB-C Charging Cable,1,11.95,2019-11-14 16:30:00,"593 South St, San Francisco, CA 94016",11,11.95,San Francisco,16
+733,279499,Google Phone,1,600.0,2019-11-24 13:51:00,"503 Maple St, Boston, MA 02215",11,600.0,Boston,13
+734,279499,Google Phone,1,600.0,2019-11-24 13:51:00,"503 Maple St, Boston, MA 02215",11,600.0,Boston,13
+984,279736,Bose SoundSport Headphones,1,99.99,2019-11-05 17:02:00,"770 North St, Dallas, TX 75001",11,99.99,Dallas,17
+985,279736,Bose SoundSport Headphones,1,99.99,2019-11-05 17:02:00,"770 North St, Dallas, TX 75001",11,99.99,Dallas,17
+1013,279763,AAA Batteries (4-pack),1,2.99,2019-11-27 13:12:00,"522 Pine St, San Francisco, CA 94016",11,2.99,San Francisco,13
+1014,279763,AAA Batteries (4-pack),1,2.99,2019-11-27 13:12:00,"522 Pine St, San Francisco, CA 94016",11,2.99,San Francisco,13
+1146,279889,Bose SoundSport Headphones,1,99.99,2019-11-18 19:35:00,"499 8th St, Atlanta, GA 30301",11,99.99,Atlanta,19
+1147,279889,Bose SoundSport Headphones,1,99.99,2019-11-18 19:35:00,"499 8th St, Atlanta, GA 30301",11,99.99,Atlanta,19
+2701,281389,Lightning Charging Cable,1,14.95,2019-11-22 12:28:00,"578 5th St, Los Angeles, CA 90001",11,14.95,Los Angeles,12
+2702,281389,Lightning Charging Cable,1,14.95,2019-11-22 12:28:00,"578 5th St, Los Angeles, CA 90001",11,14.95,Los Angeles,12
+2902,281581,Wired Headphones,1,11.99,2019-11-04 20:11:00,"819 5th St, New York City, NY 10001",11,11.99,New York City,20
+2903,281581,Wired Headphones,1,11.99,2019-11-04 20:11:00,"819 5th St, New York City, NY 10001",11,11.99,New York City,20
+3187,281850,27in FHD Monitor,1,149.99,2019-11-05 06:42:00,"423 Highland St, Atlanta, GA 30301",11,149.99,Atlanta,6
+3188,281850,27in FHD Monitor,1,149.99,2019-11-05 06:42:00,"423 Highland St, Atlanta, GA 30301",11,149.99,Atlanta,6
+3224,281886,USB-C Charging Cable,1,11.95,2019-11-16 16:19:00,"791 Meadow St, Boston, MA 02215",11,11.95,Boston,16
+3225,281886,USB-C Charging Cable,1,11.95,2019-11-16 16:19:00,"791 Meadow St, Boston, MA 02215",11,11.95,Boston,16
+3432,282089,AAA Batteries (4-pack),1,2.99,2019-11-08 16:41:00,"488 12th St, Portland, OR 97035",11,2.99,Portland,16
+3433,282089,AAA Batteries (4-pack),1,2.99,2019-11-08 16:41:00,"488 12th St, Portland, OR 97035",11,2.99,Portland,16
+3485,282137,Lightning Charging Cable,1,14.95,2019-11-13 14:40:00,"197 13th St, Los Angeles, CA 90001",11,14.95,Los Angeles,14
+3486,282137,Lightning Charging Cable,1,14.95,2019-11-13 14:40:00,"197 13th St, Los Angeles, CA 90001",11,14.95,Los Angeles,14
+4943,283528,Wired Headphones,1,11.99,2019-11-13 10:05:00,"486 Johnson St, Los Angeles, CA 90001",11,11.99,Los Angeles,10
+4944,283528,Wired Headphones,1,11.99,2019-11-13 10:05:00,"486 Johnson St, Los Angeles, CA 90001",11,11.99,Los Angeles,10
+5280,283843,Wired Headphones,1,11.99,2019-11-19 23:13:00,"850 Elm St, New York City, NY 10001",11,11.99,New York City,23
+5281,283843,Wired Headphones,1,11.99,2019-11-19 23:13:00,"850 Elm St, New York City, NY 10001",11,11.99,New York City,23
+5630,284179,AAA Batteries (4-pack),1,2.99,2019-11-20 20:48:00,"614 Hill St, Dallas, TX 75001",11,2.99,Dallas,20
+5631,284179,AAA Batteries (4-pack),1,2.99,2019-11-20 20:48:00,"614 Hill St, Dallas, TX 75001",11,2.99,Dallas,20
+5889,284428,USB-C Charging Cable,1,11.95,2019-11-04 21:47:00,"285 Church St, Los Angeles, CA 90001",11,11.95,Los Angeles,21
+5890,284428,USB-C Charging Cable,1,11.95,2019-11-04 21:47:00,"285 Church St, Los Angeles, CA 90001",11,11.95,Los Angeles,21
+5994,284525,USB-C Charging Cable,1,11.95,2019-11-05 13:29:00,"114 Ridge St, Seattle, WA 98101",11,11.95,Seattle,13
+5995,284525,USB-C Charging Cable,1,11.95,2019-11-05 13:29:00,"114 Ridge St, Seattle, WA 98101",11,11.95,Seattle,13
+7402,285875,USB-C Charging Cable,1,11.95,2019-11-26 22:10:00,"893 Center St, Atlanta, GA 30301",11,11.95,Atlanta,22
+7403,285875,USB-C Charging Cable,1,11.95,2019-11-26 22:10:00,"893 Center St, Atlanta, GA 30301",11,11.95,Atlanta,22
+7456,285927,Wired Headphones,1,11.99,2019-11-28 15:31:00,"279 10th St, Austin, TX 73301",11,11.99,Austin,15
+7457,285927,Wired Headphones,1,11.99,2019-11-28 15:31:00,"279 10th St, Austin, TX 73301",11,11.99,Austin,15
+7931,286383,Wired Headphones,1,11.99,2019-11-27 10:08:00,"541 Washington St, Dallas, TX 75001",11,11.99,Dallas,10
+7932,286383,Wired Headphones,1,11.99,2019-11-27 10:08:00,"541 Washington St, Dallas, TX 75001",11,11.99,Dallas,10
+9757,288125,Bose SoundSport Headphones,1,99.99,2019-11-17 14:34:00,"385 Lake St, Boston, MA 02215",11,99.99,Boston,14
+9758,288125,Bose SoundSport Headphones,1,99.99,2019-11-17 14:34:00,"385 Lake St, Boston, MA 02215",11,99.99,Boston,14
+10280,288620,USB-C Charging Cable,1,11.95,2019-11-29 12:54:00,"637 Willow St, San Francisco, CA 94016",11,11.95,San Francisco,12
+10281,288620,USB-C Charging Cable,1,11.95,2019-11-29 12:54:00,"637 Willow St, San Francisco, CA 94016",11,11.95,San Francisco,12
+10673,288995,Wired Headphones,1,11.99,2019-11-04 23:58:00,"552 Lincoln St, Portland, OR 97035",11,11.99,Portland,23
+10674,288995,Wired Headphones,1,11.99,2019-11-04 23:58:00,"552 Lincoln St, Portland, OR 97035",11,11.99,Portland,23
+11581,289860,AAA Batteries (4-pack),1,2.99,2019-11-21 13:52:00,"676 Dogwood St, Los Angeles, CA 90001",11,2.99,Los Angeles,13
+11582,289860,AAA Batteries (4-pack),1,2.99,2019-11-21 13:52:00,"676 Dogwood St, Los Angeles, CA 90001",11,2.99,Los Angeles,13
+13747,291932,Flatscreen TV,1,300.0,2019-11-11 17:16:00,"340 Center St, San Francisco, CA 94016",11,300.0,San Francisco,17
+13748,291932,Flatscreen TV,1,300.0,2019-11-11 17:16:00,"340 Center St, San Francisco, CA 94016",11,300.0,San Francisco,17
+13766,291949,Lightning Charging Cable,1,14.95,2019-11-30 23:22:00,"114 Elm St, Atlanta, GA 30301",11,14.95,Atlanta,23
+13767,291949,Lightning Charging Cable,1,14.95,2019-11-30 23:22:00,"114 Elm St, Atlanta, GA 30301",11,14.95,Atlanta,23
+14166,292335,AA Batteries (4-pack),1,3.84,2019-11-09 11:23:00,"834 5th St, Dallas, TX 75001",11,3.84,Dallas,11
+14167,292335,AA Batteries (4-pack),1,3.84,2019-11-09 11:23:00,"834 5th St, Dallas, TX 75001",11,3.84,Dallas,11
+14979,293114,USB-C Charging Cable,1,11.95,2019-11-29 14:35:00,"145 8th St, Austin, TX 73301",11,11.95,Austin,14
+14980,293114,USB-C Charging Cable,1,11.95,2019-11-29 14:35:00,"145 8th St, Austin, TX 73301",11,11.95,Austin,14
+15127,293254,Apple Airpods Headphones,1,150.0,2019-11-01 12:07:00,"762 12th St, San Francisco, CA 94016",11,150.0,San Francisco,12
+15128,293254,Apple Airpods Headphones,1,150.0,2019-11-01 12:07:00,"762 12th St, San Francisco, CA 94016",11,150.0,San Francisco,12
+15233,293356,USB-C Charging Cable,1,11.95,2019-11-13 00:59:00,"394 Dogwood St, Dallas, TX 75001",11,11.95,Dallas,0
+15234,293356,USB-C Charging Cable,1,11.95,2019-11-13 00:59:00,"394 Dogwood St, Dallas, TX 75001",11,11.95,Dallas,0
+978,260286,AA Batteries (4-pack),1,3.84,2019-10-25 18:18:00,"529 River St, New York City, NY 10001",10,3.84,New York City,18
+979,260286,AA Batteries (4-pack),1,3.84,2019-10-25 18:18:00,"529 River St, New York City, NY 10001",10,3.84,New York City,18
+1452,260739,AAA Batteries (4-pack),1,2.99,2019-10-09 23:06:00,"372 9th St, Seattle, WA 98101",10,2.99,Seattle,23
+1453,260739,AAA Batteries (4-pack),1,2.99,2019-10-09 23:06:00,"372 9th St, Seattle, WA 98101",10,2.99,Seattle,23
+2337,261586,AAA Batteries (4-pack),1,2.99,2019-10-11 20:03:00,"703 Main St, Los Angeles, CA 90001",10,2.99,Los Angeles,20
+2338,261586,AAA Batteries (4-pack),1,2.99,2019-10-11 20:03:00,"703 Main St, Los Angeles, CA 90001",10,2.99,Los Angeles,20
+2853,262078,Bose SoundSport Headphones,1,99.99,2019-10-01 15:22:00,"158 Cherry St, San Francisco, CA 94016",10,99.99,San Francisco,15
+2854,262078,Bose SoundSport Headphones,1,99.99,2019-10-01 15:22:00,"158 Cherry St, San Francisco, CA 94016",10,99.99,San Francisco,15
+3604,262792,27in 4K Gaming Monitor,1,389.99,2019-10-29 12:55:00,"536 Lakeview St, San Francisco, CA 94016",10,389.99,San Francisco,12
+3605,262792,27in 4K Gaming Monitor,1,389.99,2019-10-29 12:55:00,"536 Lakeview St, San Francisco, CA 94016",10,389.99,San Francisco,12
+5239,264351,27in FHD Monitor,1,149.99,2019-10-31 22:08:00,"689 6th St, Austin, TX 73301",10,149.99,Austin,22
+5240,264351,27in FHD Monitor,1,149.99,2019-10-31 22:08:00,"689 6th St, Austin, TX 73301",10,149.99,Austin,22
+5432,264534,AAA Batteries (4-pack),2,2.99,2019-10-24 10:43:00,"381 12th St, Boston, MA 02215",10,5.98,Boston,10
+5433,264534,AAA Batteries (4-pack),2,2.99,2019-10-24 10:43:00,"381 12th St, Boston, MA 02215",10,5.98,Boston,10
+6149,265224,Lightning Charging Cable,1,14.95,2019-10-01 10:34:00,"304 Highland St, Los Angeles, CA 90001",10,14.95,Los Angeles,10
+6150,265224,Lightning Charging Cable,1,14.95,2019-10-01 10:34:00,"304 Highland St, Los Angeles, CA 90001",10,14.95,Los Angeles,10
+6415,265480,Lightning Charging Cable,1,14.95,2019-10-23 15:41:00,"341 Lakeview St, San Francisco, CA 94016",10,14.95,San Francisco,15
+6416,265480,Lightning Charging Cable,1,14.95,2019-10-23 15:41:00,"341 Lakeview St, San Francisco, CA 94016",10,14.95,San Francisco,15
+6711,265765,USB-C Charging Cable,1,11.95,2019-10-24 15:32:00,"660 Center St, Boston, MA 02215",10,11.95,Boston,15
+6712,265765,USB-C Charging Cable,1,11.95,2019-10-24 15:32:00,"660 Center St, Boston, MA 02215",10,11.95,Boston,15
+6719,265772,AAA Batteries (4-pack),1,2.99,2019-10-18 11:17:00,"518 1st St, Los Angeles, CA 90001",10,2.99,Los Angeles,11
+6720,265772,AAA Batteries (4-pack),1,2.99,2019-10-18 11:17:00,"518 1st St, Los Angeles, CA 90001",10,2.99,Los Angeles,11
+7247,266280,USB-C Charging Cable,1,11.95,2019-10-02 11:11:00,"53 Dogwood St, Portland, OR 97035",10,11.95,Portland,11
+7248,266280,USB-C Charging Cable,1,11.95,2019-10-02 11:11:00,"53 Dogwood St, Portland, OR 97035",10,11.95,Portland,11
+7629,266648,Wired Headphones,1,11.99,2019-10-31 12:39:00,"198 West St, Atlanta, GA 30301",10,11.99,Atlanta,12
+7630,266648,Wired Headphones,1,11.99,2019-10-31 12:39:00,"198 West St, Atlanta, GA 30301",10,11.99,Atlanta,12
+8333,267322,Bose SoundSport Headphones,1,99.99,2019-10-30 00:24:00,"17 Park St, Dallas, TX 75001",10,99.99,Dallas,0
+8334,267322,Bose SoundSport Headphones,1,99.99,2019-10-30 00:24:00,"17 Park St, Dallas, TX 75001",10,99.99,Dallas,0
+8399,267378,Lightning Charging Cable,1,14.95,2019-10-12 15:16:00,"374 14th St, San Francisco, CA 94016",10,14.95,San Francisco,15
+8400,267378,Lightning Charging Cable,1,14.95,2019-10-12 15:16:00,"374 14th St, San Francisco, CA 94016",10,14.95,San Francisco,15
+9053,267999,Bose SoundSport Headphones,1,99.99,2019-10-09 11:42:00,"886 Lincoln St, Dallas, TX 75001",10,99.99,Dallas,11
+9054,267999,Bose SoundSport Headphones,1,99.99,2019-10-09 11:42:00,"886 Lincoln St, Dallas, TX 75001",10,99.99,Dallas,11
+9638,268551,Lightning Charging Cable,1,14.95,2019-10-02 15:20:00,"515 Pine St, San Francisco, CA 94016",10,14.95,San Francisco,15
+9639,268551,Lightning Charging Cable,1,14.95,2019-10-02 15:20:00,"515 Pine St, San Francisco, CA 94016",10,14.95,San Francisco,15
+11446,270283,Wired Headphones,1,11.99,2019-10-02 14:51:00,"327 Meadow St, San Francisco, CA 94016",10,11.99,San Francisco,14
+11447,270283,Wired Headphones,1,11.99,2019-10-02 14:51:00,"327 Meadow St, San Francisco, CA 94016",10,11.99,San Francisco,14
+11803,270624,USB-C Charging Cable,1,11.95,2019-10-19 10:41:00,"998 Forest St, Atlanta, GA 30301",10,11.95,Atlanta,10
+11804,270624,USB-C Charging Cable,1,11.95,2019-10-19 10:41:00,"998 Forest St, Atlanta, GA 30301",10,11.95,Atlanta,10
+13552,272288,27in FHD Monitor,1,149.99,2019-10-17 19:54:00,"456 4th St, San Francisco, CA 94016",10,149.99,San Francisco,19
+13553,272288,27in FHD Monitor,1,149.99,2019-10-17 19:54:00,"456 4th St, San Francisco, CA 94016",10,149.99,San Francisco,19
+13947,272665,Wired Headphones,1,11.99,2019-10-29 19:52:00,"138 Madison St, Dallas, TX 75001",10,11.99,Dallas,19
+13948,272665,Wired Headphones,1,11.99,2019-10-29 19:52:00,"138 Madison St, Dallas, TX 75001",10,11.99,Dallas,19
+14077,272790,USB-C Charging Cable,1,11.95,2019-10-25 11:35:00,"424 Ridge St, San Francisco, CA 94016",10,11.95,San Francisco,11
+14078,272790,USB-C Charging Cable,1,11.95,2019-10-25 11:35:00,"424 Ridge St, San Francisco, CA 94016",10,11.95,San Francisco,11
+15294,273956,AAA Batteries (4-pack),1,2.99,2019-10-25 21:46:00,"835 Elm St, Dallas, TX 75001",10,2.99,Dallas,21
+15295,273956,AAA Batteries (4-pack),1,2.99,2019-10-25 21:46:00,"835 Elm St, Dallas, TX 75001",10,2.99,Dallas,21
+15449,274101,Lightning Charging Cable,1,14.95,2019-10-19 14:34:00,"227 Hickory St, San Francisco, CA 94016",10,14.95,San Francisco,14
+15450,274101,Lightning Charging Cable,1,14.95,2019-10-19 14:34:00,"227 Hickory St, San Francisco, CA 94016",10,14.95,San Francisco,14
+15526,274175,Lightning Charging Cable,1,14.95,2019-10-28 07:26:00,"32 River St, Boston, MA 02215",10,14.95,Boston,7
+15527,274175,Lightning Charging Cable,1,14.95,2019-10-28 07:26:00,"32 River St, Boston, MA 02215",10,14.95,Boston,7
+15560,274207,Apple Airpods Headphones,1,150.0,2019-10-18 14:26:00,"21 4th St, Los Angeles, CA 90001",10,150.0,Los Angeles,14
+15561,274207,Apple Airpods Headphones,1,150.0,2019-10-18 14:26:00,"21 4th St, Los Angeles, CA 90001",10,150.0,Los Angeles,14
+16432,275028,Lightning Charging Cable,1,14.95,2019-10-25 19:49:00,"72 8th St, Austin, TX 73301",10,14.95,Austin,19
+16433,275028,Lightning Charging Cable,1,14.95,2019-10-25 19:49:00,"72 8th St, Austin, TX 73301",10,14.95,Austin,19
+18171,276692,20in Monitor,1,109.99,2019-10-23 10:52:00,"939 River St, Atlanta, GA 30301",10,109.99,Atlanta,10
+18172,276692,20in Monitor,1,109.99,2019-10-23 10:52:00,"939 River St, Atlanta, GA 30301",10,109.99,Atlanta,10
+18293,276810,USB-C Charging Cable,1,11.95,2019-10-30 16:15:00,"432 Walnut St, Seattle, WA 98101",10,11.95,Seattle,16
+18294,276810,USB-C Charging Cable,1,11.95,2019-10-30 16:15:00,"432 Walnut St, Seattle, WA 98101",10,11.95,Seattle,16
+18541,277044,Apple Airpods Headphones,1,150.0,2019-10-16 11:05:00,"204 Jefferson St, San Francisco, CA 94016",10,150.0,San Francisco,11
+18542,277044,Apple Airpods Headphones,1,150.0,2019-10-16 11:05:00,"204 Jefferson St, San Francisco, CA 94016",10,150.0,San Francisco,11
+18581,277081,Flatscreen TV,1,300.0,2019-10-27 10:33:00,"301 12th St, Portland, ME 04101",10,300.0,Portland,10
+18582,277081,Flatscreen TV,1,300.0,2019-10-27 10:33:00,"301 12th St, Portland, ME 04101",10,300.0,Portland,10
+19239,277701,Lightning Charging Cable,1,14.95,2019-10-29 16:21:00,"386 10th St, San Francisco, CA 94016",10,14.95,San Francisco,16
+19240,277701,Lightning Charging Cable,1,14.95,2019-10-29 16:21:00,"386 10th St, San Francisco, CA 94016",10,14.95,San Francisco,16
+19608,278062,Wired Headphones,1,11.99,2019-10-02 21:39:00,"769 Walnut St, San Francisco, CA 94016",10,11.99,San Francisco,21
+19609,278062,Wired Headphones,1,11.99,2019-10-02 21:39:00,"769 Walnut St, San Francisco, CA 94016",10,11.99,San Francisco,21
+874,142071,AA Batteries (4-pack),1,3.84,2019-01-17 23:02:00,"131 2nd St, Boston, MA 02215",1,3.84,Boston,23
+875,142071,AA Batteries (4-pack),1,3.84,2019-01-17 23:02:00,"131 2nd St, Boston, MA 02215",1,3.84,Boston,23
+4125,145143,Lightning Charging Cable,1,14.95,2019-01-06 03:01:00,"182 Jefferson St, San Francisco, CA 94016",1,14.95,San Francisco,3
+4126,145143,Lightning Charging Cable,1,14.95,2019-01-06 03:01:00,"182 Jefferson St, San Francisco, CA 94016",1,14.95,San Francisco,3
+5810,146765,Google Phone,1,600.0,2019-01-21 11:23:00,"918 Highland St, New York City, NY 10001",1,600.0,New York City,11
+5811,146765,Google Phone,1,600.0,2019-01-21 11:23:00,"918 Highland St, New York City, NY 10001",1,600.0,New York City,11
+6806,147707,Wired Headphones,1,11.99,2019-01-04 16:50:00,"883 4th St, Dallas, TX 75001",1,11.99,Dallas,16
+6807,147707,Wired Headphones,1,11.99,2019-01-04 16:50:00,"883 4th St, Dallas, TX 75001",1,11.99,Dallas,16
+8133,148984,USB-C Charging Cable,1,11.95,2019-01-08 17:36:00,"562 14th St, Boston, MA 02215",1,11.95,Boston,17
+8134,148984,USB-C Charging Cable,1,11.95,2019-01-08 17:36:00,"562 14th St, Boston, MA 02215",1,11.95,Boston,17
+8308,149149,Lightning Charging Cable,1,14.95,2019-01-12 12:30:00,"180 1st St, Boston, MA 02215",1,14.95,Boston,12
+8309,149149,Lightning Charging Cable,1,14.95,2019-01-12 12:30:00,"180 1st St, Boston, MA 02215",1,14.95,Boston,12
+8469,149308,Apple Airpods Headphones,1,150.0,2019-01-02 23:07:00,"351 Madison St, New York City, NY 10001",1,150.0,New York City,23
+8470,149308,Apple Airpods Headphones,1,150.0,2019-01-02 23:07:00,"351 Madison St, New York City, NY 10001",1,150.0,New York City,23
+8689,149515,USB-C Charging Cable,1,11.95,2019-01-14 21:19:00,"913 10th St, Los Angeles, CA 90001",1,11.95,Los Angeles,21
+8690,149515,USB-C Charging Cable,1,11.95,2019-01-14 21:19:00,"913 10th St, Los Angeles, CA 90001",1,11.95,Los Angeles,21
+8922,149738,USB-C Charging Cable,1,11.95,2019-01-11 11:22:00,"612 West St, New York City, NY 10001",1,11.95,New York City,11
+8923,149738,USB-C Charging Cable,1,11.95,2019-01-11 11:22:00,"612 West St, New York City, NY 10001",1,11.95,New York City,11
+9426,150216,Wired Headphones,1,11.99,2019-01-21 09:20:00,"691 Pine St, San Francisco, CA 94016",1,11.99,San Francisco,9
+9427,150216,Wired Headphones,1,11.99,2019-01-21 09:20:00,"691 Pine St, San Francisco, CA 94016",1,11.99,San Francisco,9
+20,248171,USB-C Charging Cable,1,11.95,2019-09-05 15:06:00,"705 Hill St, New York City, NY 10001",9,11.95,New York City,15
+21,248171,USB-C Charging Cable,1,11.95,2019-09-05 15:06:00,"705 Hill St, New York City, NY 10001",9,11.95,New York City,15
+657,248787,AA Batteries (4-pack),1,3.84,2019-09-09 12:30:00,"705 Adams St, San Francisco, CA 94016",9,3.84,San Francisco,12
+658,248787,AA Batteries (4-pack),1,3.84,2019-09-09 12:30:00,"705 Adams St, San Francisco, CA 94016",9,3.84,San Francisco,12
+1821,249895,34in Ultrawide Monitor,1,379.99,2019-09-19 22:14:00,"901 South St, San Francisco, CA 94016",9,379.99,San Francisco,22
+1822,249895,34in Ultrawide Monitor,1,379.99,2019-09-19 22:14:00,"901 South St, San Francisco, CA 94016",9,379.99,San Francisco,22
+1838,249910,AAA Batteries (4-pack),1,2.99,2019-09-09 18:34:00,"295 Meadow St, San Francisco, CA 94016",9,2.99,San Francisco,18
+1839,249910,AAA Batteries (4-pack),1,2.99,2019-09-09 18:34:00,"295 Meadow St, San Francisco, CA 94016",9,2.99,San Francisco,18
+2112,250174,Apple Airpods Headphones,1,150.0,2019-09-30 19:32:00,"490 6th St, New York City, NY 10001",9,150.0,New York City,19
+2113,250174,Apple Airpods Headphones,1,150.0,2019-09-30 19:32:00,"490 6th St, New York City, NY 10001",9,150.0,New York City,19
+4566,252537,Wired Headphones,1,11.99,2019-09-18 21:37:00,"558 6th St, San Francisco, CA 94016",9,11.99,San Francisco,21
+4567,252537,Wired Headphones,1,11.99,2019-09-18 21:37:00,"558 6th St, San Francisco, CA 94016",9,11.99,San Francisco,21
+6081,253981,Lightning Charging Cable,1,14.95,2019-09-02 22:32:00,"811 Adams St, Atlanta, GA 30301",9,14.95,Atlanta,22
+6082,253981,Lightning Charging Cable,1,14.95,2019-09-02 22:32:00,"811 Adams St, Atlanta, GA 30301",9,14.95,Atlanta,22
+7090,254945,Apple Airpods Headphones,1,150.0,2019-09-23 18:09:00,"13 Hill St, Austin, TX 73301",9,150.0,Austin,18
+7091,254945,Apple Airpods Headphones,1,150.0,2019-09-23 18:09:00,"13 Hill St, Austin, TX 73301",9,150.0,Austin,18
+7482,255318,Macbook Pro Laptop,1,1700.0,2019-09-26 11:58:00,"548 Jackson St, Dallas, TX 75001",9,1700.0,Dallas,11
+7483,255318,Macbook Pro Laptop,1,1700.0,2019-09-26 11:58:00,"548 Jackson St, Dallas, TX 75001",9,1700.0,Dallas,11
+7557,255390,Lightning Charging Cable,1,14.95,2019-09-09 14:34:00,"505 Hill St, San Francisco, CA 94016",9,14.95,San Francisco,14
+7558,255390,Lightning Charging Cable,1,14.95,2019-09-09 14:34:00,"505 Hill St, San Francisco, CA 94016",9,14.95,San Francisco,14
+8389,256196,USB-C Charging Cable,1,11.95,2019-09-27 21:09:00,"253 6th St, Boston, MA 02215",9,11.95,Boston,21
+8390,256196,USB-C Charging Cable,1,11.95,2019-09-27 21:09:00,"253 6th St, Boston, MA 02215",9,11.95,Boston,21
+8793,256588,Apple Airpods Headphones,1,150.0,2019-09-08 18:07:00,"3 Dogwood St, Boston, MA 02215",9,150.0,Boston,18
+8794,256588,Apple Airpods Headphones,1,150.0,2019-09-08 18:07:00,"3 Dogwood St, Boston, MA 02215",9,150.0,Boston,18
+8975,256763,27in FHD Monitor,1,149.99,2019-09-15 22:28:00,"23 11th St, San Francisco, CA 94016",9,149.99,San Francisco,22
+8976,256763,27in FHD Monitor,1,149.99,2019-09-15 22:28:00,"23 11th St, San Francisco, CA 94016",9,149.99,San Francisco,22
+9775,257530,USB-C Charging Cable,1,11.95,2019-09-03 11:13:00,"192 Johnson St, San Francisco, CA 94016",9,11.95,San Francisco,11
+9776,257530,USB-C Charging Cable,1,11.95,2019-09-03 11:13:00,"192 Johnson St, San Francisco, CA 94016",9,11.95,San Francisco,11
+11008,258715,Lightning Charging Cable,1,14.95,2019-09-15 16:50:00,"550 10th St, Portland, OR 97035",9,14.95,Portland,16
+11009,258715,Lightning Charging Cable,1,14.95,2019-09-15 16:50:00,"550 10th St, Portland, OR 97035",9,14.95,Portland,16
+11343,259035,27in FHD Monitor,1,149.99,2019-09-29 13:52:00,"327 Lake St, San Francisco, CA 94016",9,149.99,San Francisco,13
+11344,259035,27in FHD Monitor,1,149.99,2019-09-29 13:52:00,"327 Lake St, San Francisco, CA 94016",9,149.99,San Francisco,13
+11617,259296,Apple Airpods Headphones,1,150.0,2019-09-28 16:48:00,"894 6th St, Dallas, TX 75001",9,150.0,Dallas,16
+11618,259296,Apple Airpods Headphones,1,150.0,2019-09-28 16:48:00,"894 6th St, Dallas, TX 75001",9,150.0,Dallas,16
+11620,259297,Lightning Charging Cable,1,14.95,2019-09-15 18:54:00,"138 Main St, Boston, MA 02215",9,14.95,Boston,18
+11621,259297,Lightning Charging Cable,1,14.95,2019-09-15 18:54:00,"138 Main St, Boston, MA 02215",9,14.95,Boston,18
+2879,225674,Bose SoundSport Headphones,1,99.99,2019-07-06 09:28:00,"470 Center St, Atlanta, GA 30301",7,99.99,Atlanta,9
+2880,225674,Bose SoundSport Headphones,1,99.99,2019-07-06 09:28:00,"470 Center St, Atlanta, GA 30301",7,99.99,Atlanta,9
+3579,226333,AAA Batteries (4-pack),1,2.99,2019-07-05 09:33:00,"947 West St, Seattle, WA 98101",7,2.99,Seattle,9
+3580,226333,AAA Batteries (4-pack),1,2.99,2019-07-05 09:33:00,"947 West St, Seattle, WA 98101",7,2.99,Seattle,9
+3673,226421,Google Phone,1,600.0,2019-07-28 17:21:00,"162 14th St, San Francisco, CA 94016",7,600.0,San Francisco,17
+3674,226421,Google Phone,1,600.0,2019-07-28 17:21:00,"162 14th St, San Francisco, CA 94016",7,600.0,San Francisco,17
+3783,226526,AAA Batteries (4-pack),1,2.99,2019-07-02 18:05:00,"926 Chestnut St, Atlanta, GA 30301",7,2.99,Atlanta,18
+3784,226526,AAA Batteries (4-pack),1,2.99,2019-07-02 18:05:00,"926 Chestnut St, Atlanta, GA 30301",7,2.99,Atlanta,18
+3886,226625,Wired Headphones,1,11.99,2019-07-15 23:06:00,"553 Willow St, San Francisco, CA 94016",7,11.99,San Francisco,23
+3887,226625,Wired Headphones,1,11.99,2019-07-15 23:06:00,"553 Willow St, San Francisco, CA 94016",7,11.99,San Francisco,23
+4409,227128,27in FHD Monitor,1,149.99,2019-07-18 01:22:00,"152 Main St, San Francisco, CA 94016",7,149.99,San Francisco,1
+4410,227128,27in FHD Monitor,1,149.99,2019-07-18 01:22:00,"152 Main St, San Francisco, CA 94016",7,149.99,San Francisco,1
+4887,227586,Bose SoundSport Headphones,1,99.99,2019-07-25 13:36:00,"416 Sunset St, Los Angeles, CA 90001",7,99.99,Los Angeles,13
+4888,227586,Bose SoundSport Headphones,1,99.99,2019-07-25 13:36:00,"416 Sunset St, Los Angeles, CA 90001",7,99.99,Los Angeles,13
+5347,228015,AA Batteries (4-pack),1,3.84,2019-07-06 16:53:00,"162 Ridge St, Boston, MA 02215",7,3.84,Boston,16
+5348,228015,AA Batteries (4-pack),1,3.84,2019-07-06 16:53:00,"162 Ridge St, Boston, MA 02215",7,3.84,Boston,16
+5775,228433,Bose SoundSport Headphones,1,99.99,2019-07-08 20:32:00,"481 Maple St, San Francisco, CA 94016",7,99.99,San Francisco,20
+5776,228433,Bose SoundSport Headphones,1,99.99,2019-07-08 20:32:00,"481 Maple St, San Francisco, CA 94016",7,99.99,San Francisco,20
+6061,228708,Lightning Charging Cable,1,14.95,2019-07-12 04:17:00,"274 Spruce St, New York City, NY 10001",7,14.95,New York City,4
+6062,228708,Lightning Charging Cable,1,14.95,2019-07-12 04:17:00,"274 Spruce St, New York City, NY 10001",7,14.95,New York City,4
+7104,229701,27in FHD Monitor,1,149.99,2019-07-25 10:22:00,"696 Adams St, Los Angeles, CA 90001",7,149.99,Los Angeles,10
+7105,229701,27in FHD Monitor,1,149.99,2019-07-25 10:22:00,"696 Adams St, Los Angeles, CA 90001",7,149.99,Los Angeles,10
+8028,230583,Lightning Charging Cable,1,14.95,2019-07-25 21:05:00,"554 Jackson St, Los Angeles, CA 90001",7,14.95,Los Angeles,21
+8029,230583,Lightning Charging Cable,1,14.95,2019-07-25 21:05:00,"554 Jackson St, Los Angeles, CA 90001",7,14.95,Los Angeles,21
+8320,230857,USB-C Charging Cable,1,11.95,2019-07-18 12:21:00,"367 Meadow St, Los Angeles, CA 90001",7,11.95,Los Angeles,12
+8321,230857,USB-C Charging Cable,1,11.95,2019-07-18 12:21:00,"367 Meadow St, Los Angeles, CA 90001",7,11.95,Los Angeles,12
+8733,231254,AAA Batteries (4-pack),1,2.99,2019-07-11 13:41:00,"53 Willow St, New York City, NY 10001",7,2.99,New York City,13
+8734,231254,AAA Batteries (4-pack),1,2.99,2019-07-11 13:41:00,"53 Willow St, New York City, NY 10001",7,2.99,New York City,13
+10874,233314,Lightning Charging Cable,1,14.95,2019-07-18 15:04:00,"237 4th St, Boston, MA 02215",7,14.95,Boston,15
+10875,233314,Lightning Charging Cable,1,14.95,2019-07-18 15:04:00,"237 4th St, Boston, MA 02215",7,14.95,Boston,15
+10886,233325,AAA Batteries (4-pack),1,2.99,2019-07-10 22:22:00,"852 Madison St, Los Angeles, CA 90001",7,2.99,Los Angeles,22
+10887,233325,AAA Batteries (4-pack),1,2.99,2019-07-10 22:22:00,"852 Madison St, Los Angeles, CA 90001",7,2.99,Los Angeles,22
+11685,234091,Lightning Charging Cable,1,14.95,2019-07-02 22:48:00,"202 South St, San Francisco, CA 94016",7,14.95,San Francisco,22
+11686,234091,Lightning Charging Cable,1,14.95,2019-07-02 22:48:00,"202 South St, San Francisco, CA 94016",7,14.95,San Francisco,22
+11858,234258,Lightning Charging Cable,1,14.95,2019-07-16 15:37:00,"341 2nd St, San Francisco, CA 94016",7,14.95,San Francisco,15
+11859,234258,Lightning Charging Cable,1,14.95,2019-07-16 15:37:00,"341 2nd St, San Francisco, CA 94016",7,14.95,San Francisco,15
+655,210550,Lightning Charging Cable,1,14.95,2019-06-11 19:41:00,"226 Madison St, Atlanta, GA 30301",6,14.95,Atlanta,19
+656,210550,Lightning Charging Cable,1,14.95,2019-06-11 19:41:00,"226 Madison St, Atlanta, GA 30301",6,14.95,Atlanta,19
+1079,210950,Apple Airpods Headphones,1,150.0,2019-06-22 20:00:00,"479 Hickory St, New York City, NY 10001",6,150.0,New York City,20
+1080,210950,Apple Airpods Headphones,1,150.0,2019-06-22 20:00:00,"479 Hickory St, New York City, NY 10001",6,150.0,New York City,20
+1383,211235,AA Batteries (4-pack),1,3.84,2019-06-04 16:48:00,"482 Church St, Los Angeles, CA 90001",6,3.84,Los Angeles,16
+1384,211235,AA Batteries (4-pack),1,3.84,2019-06-04 16:48:00,"482 Church St, Los Angeles, CA 90001",6,3.84,Los Angeles,16
+2302,212107,Bose SoundSport Headphones,1,99.99,2019-06-28 23:49:00,"398 Walnut St, San Francisco, CA 94016",6,99.99,San Francisco,23
+2303,212107,Bose SoundSport Headphones,1,99.99,2019-06-28 23:49:00,"398 Walnut St, San Francisco, CA 94016",6,99.99,San Francisco,23
+3278,213035,USB-C Charging Cable,1,11.95,2019-06-23 20:03:00,"398 2nd St, Dallas, TX 75001",6,11.95,Dallas,20
+3279,213035,USB-C Charging Cable,1,11.95,2019-06-23 20:03:00,"398 2nd St, Dallas, TX 75001",6,11.95,Dallas,20
+5119,214776,USB-C Charging Cable,1,11.95,2019-06-17 19:22:00,"291 2nd St, Portland, ME 04101",6,11.95,Portland,19
+5120,214776,USB-C Charging Cable,1,11.95,2019-06-17 19:22:00,"291 2nd St, Portland, ME 04101",6,11.95,Portland,19
+5311,214960,Bose SoundSport Headphones,1,99.99,2019-06-20 04:29:00,"616 Cedar St, Portland, OR 97035",6,99.99,Portland,4
+5312,214960,Bose SoundSport Headphones,1,99.99,2019-06-20 04:29:00,"616 Cedar St, Portland, OR 97035",6,99.99,Portland,4
+5329,214976,iPhone,1,700.0,2019-06-24 23:41:00,"287 6th St, San Francisco, CA 94016",6,700.0,San Francisco,23
+5330,214976,iPhone,1,700.0,2019-06-24 23:41:00,"287 6th St, San Francisco, CA 94016",6,700.0,San Francisco,23
+6527,216126,Wired Headphones,1,11.99,2019-06-29 07:53:00,"3 12th St, New York City, NY 10001",6,11.99,New York City,7
+6528,216126,Wired Headphones,1,11.99,2019-06-29 07:53:00,"3 12th St, New York City, NY 10001",6,11.99,New York City,7
+6727,216321,USB-C Charging Cable,1,11.95,2019-06-19 16:11:00,"586 Wilson St, Seattle, WA 98101",6,11.95,Seattle,16
+6728,216321,USB-C Charging Cable,1,11.95,2019-06-19 16:11:00,"586 Wilson St, Seattle, WA 98101",6,11.95,Seattle,16
+7650,217210,Apple Airpods Headphones,1,150.0,2019-06-11 15:31:00,"258 10th St, Boston, MA 02215",6,150.0,Boston,15
+7651,217210,Apple Airpods Headphones,1,150.0,2019-06-11 15:31:00,"258 10th St, Boston, MA 02215",6,150.0,Boston,15
+8417,217951,Bose SoundSport Headphones,1,99.99,2019-06-23 11:51:00,"883 Jackson St, Boston, MA 02215",6,99.99,Boston,11
+8418,217951,Bose SoundSport Headphones,1,99.99,2019-06-23 11:51:00,"883 Jackson St, Boston, MA 02215",6,99.99,Boston,11
+8909,218420,Lightning Charging Cable,1,14.95,2019-06-22 16:25:00,"543 North St, Boston, MA 02215",6,14.95,Boston,16
+8910,218420,Lightning Charging Cable,1,14.95,2019-06-22 16:25:00,"543 North St, Boston, MA 02215",6,14.95,Boston,16
+9045,218548,AA Batteries (4-pack),1,3.84,2019-06-04 21:21:00,"519 Maple St, Boston, MA 02215",6,3.84,Boston,21
+9046,218548,AA Batteries (4-pack),1,3.84,2019-06-04 21:21:00,"519 Maple St, Boston, MA 02215",6,3.84,Boston,21
+9266,218756,AAA Batteries (4-pack),1,2.99,2019-06-11 14:54:00,"362 Hickory St, Boston, MA 02215",6,2.99,Boston,14
+9267,218756,AAA Batteries (4-pack),1,2.99,2019-06-11 14:54:00,"362 Hickory St, Boston, MA 02215",6,2.99,Boston,14
+9537,219007,AA Batteries (4-pack),1,3.84,2019-06-24 11:16:00,"42 8th St, Los Angeles, CA 90001",6,3.84,Los Angeles,11
+9538,219007,AA Batteries (4-pack),1,3.84,2019-06-24 11:16:00,"42 8th St, Los Angeles, CA 90001",6,3.84,Los Angeles,11
+10982,220392,Lightning Charging Cable,1,14.95,2019-06-08 17:13:00,"472 8th St, Portland, ME 04101",6,14.95,Portland,17
+10983,220392,Lightning Charging Cable,1,14.95,2019-06-08 17:13:00,"472 8th St, Portland, ME 04101",6,14.95,Portland,17
+11486,220882,Lightning Charging Cable,1,14.95,2019-06-13 17:53:00,"588 Lake St, Boston, MA 02215",6,14.95,Boston,17
+11487,220882,Lightning Charging Cable,1,14.95,2019-06-13 17:53:00,"588 Lake St, Boston, MA 02215",6,14.95,Boston,17
+12355,221711,Bose SoundSport Headphones,1,99.99,2019-06-15 16:36:00,"139 West St, New York City, NY 10001",6,99.99,New York City,16
+12356,221711,Bose SoundSport Headphones,1,99.99,2019-06-15 16:36:00,"139 West St, New York City, NY 10001",6,99.99,New York City,16
