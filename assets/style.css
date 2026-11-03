@@ -1,0 +1,142 @@
+
+/* ======================================
+   GLOBAL THEME
+====================================== */
+
+.stApp {
+    background-color: #F4F6FB;
+    color: #20243A;
+    font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+header[data-testid="stHeader"] {
+    background: transparent;
+}
+
+.block-container {
+    max-width: 1500px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* ======================================
+   SIDEBAR
+====================================== */
+
+section[data-testid="stSidebar"] {
+    background-color: #20243A;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #FFFFFF;
+}
+
+section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] p {
+    color: #D8DCEE;
+}
+
+section[data-testid="stSidebar"] input {
+    color: #20243A;
+}
+
+/* ======================================
+   HEADINGS
+====================================== */
+
+h1 {
+    color: #20243A;
+    font-weight: 750;
+    letter-spacing: -1px;
+}
+
+h2, h3 {
+    color: #20243A;
+    font-weight: 650;
+}
+
+/* ======================================
+   KPI METRIC CARDS
+====================================== */
+
+div[data-testid="stMetric"] {
+    background-color: #FFFFFF;
+    border: 1px solid #E9ECF4;
+    padding: 20px 22px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(32, 36, 58, 0.04);
+    min-height: 120px;
+}
+
+div[data-testid="stMetricLabel"] {
+    color: #858BA3;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+div[data-testid="stMetricValue"] {
+    color: #20243A;
+    font-size: 27px;
+    font-weight: 750;
+}
+
+/* ======================================
+   CONTENT CONTAINERS
+====================================== */
+
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    background-color: #FFFFFF;
+    border: 1px solid #E9ECF4;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(32, 36, 58, 0.035);
+}
+
+/* ======================================
+   FILTERS AND BUTTONS
+====================================== */
+
+.stSelectbox, .stDateInput {
+    border-radius: 10px;
+}
+
+.stButton > button {
+    background-color: #6659D9;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 9px 18px;
+}
+
+.stButton > button:hover {
+    background-color: #5144C2;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* ======================================
+   DATA TABLE
+====================================== */
+
+div[data-testid="stDataFrame"] {
+    border: 1px solid #E9ECF4;
+    border-radius: 12px;
+}
+
+/* ======================================
+   DIVIDER
+====================================== */
+
+hr {
+    border-color: #E6E9F1;
+}
+
+/* ======================================
+   FOOTER
+====================================== */
+
+.dashboard-footer {
+    color: #9298AC;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px 0;
+}

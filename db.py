@@ -17,10 +17,14 @@ engine = create_engine(
     pool_pre_ping=True
 )
 
-def get_data(query):
+def get_data(query, params=None):
     """Execute SQL query and return a Pandas DataFrame."""
     with engine.connect() as connection:
-        return pd.read_sql(text(query), connection)
+        return pd.read_sql(
+            text(query), 
+            connection, 
+            params=params or {}
+        )
 
 def test_connection():
     """Test PostgreSQL database connection."""
