@@ -1,142 +1,160 @@
+/* ELECTRONICS SALES INTELLIGENCE
+        SOFT LAVENDER THEME  */
 
-/* ======================================
-   GLOBAL THEME
-====================================== */
+:root {
+    --bg-main: #F2EEFF;
+    --bg-sidebar: #E5DCFF;
+    --bg-card: #FFFFFF;
+    --purple-light: #B9A5F5;
+    --purple-main: #8D73DF;
+    --purple-dark: #6953B5;
+    --text-main: #342B4F;
+    --text-muted: #817995;
+    --border-color: #EAE4F8;
+}
+
+/* Main Application */
 
 .stApp {
-    background-color: #F4F6FB;
-    color: #20243A;
-    font-family: "Inter", "Segoe UI", sans-serif;
+    background: var(--bg-main);
+    color: var(--text-main);
 }
 
-header[data-testid="stHeader"] {
-    background: transparent;
+/* Main Content */
+
+section.main > div {
+    background: var(--bg-main);
 }
 
-.block-container {
-    max-width: 1500px;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-}
-
-/* ======================================
-   SIDEBAR
-====================================== */
+/* Sidebar */
 
 section[data-testid="stSidebar"] {
-    background-color: #20243A;
+    background: var(--bg-sidebar);
+    border-right: 1px solid #D9CEF5;
 }
 
 section[data-testid="stSidebar"] * {
-    color: #FFFFFF;
+    color: var(--text-main);
 }
 
-section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] p {
-    color: #D8DCEE;
+/* Sidebar */
+
+section[data-testid="stSidebar"] {
+    background: var(--bg-sidebar);
+    border-right: 1px solid #D9CEF5;
 }
 
-section[data-testid="stSidebar"] input {
-    color: #20243A;
+section[data-testid="stSidebar"] * {
+    color: var(--text-main);
 }
 
-/* ======================================
-   HEADINGS
-====================================== */
+/* Sidebar brand */
 
-h1 {
-    color: #20243A;
-    font-weight: 750;
-    letter-spacing: -1px;
+.sidebar-brand {
+    font-size: 21px;
+    font-weight: 800;
+    color: var(-purple-dark);
+    letter-spacing: 1px;
+    line-height: 1.4;
 }
 
-h2, h3 {
-    color: #20243A;
-    font-weight: 650;
+/* Navigation */
+
+section[data-testid="stSidebar"]
+div[role="radiogroup"] {
+    gap: 9px;
 }
 
-/* ======================================
-   KPI METRIC CARDS
-====================================== */
-
-div[data-testid="stMetric"] {
-    background-color: #FFFFFF;
-    border: 1px solid #E9ECF4;
-    padding: 20px 22px;
-    border-radius: 16px;
-    box-shadow: 0 4px 16px rgba(32, 36, 58, 0.04);
-    min-height: 120px;
+section[data-testid="stSidebar"]
+div[role="radiogroup"] label {
+    background: transparent;
+    border-radius: 12px;
+    padding: 10px 12px;
+    transition: 0.2s ease;
 }
 
-div[data-testid="stMetricLabel"] {
-    color: #858BA3;
-    font-size: 13px;
-    font-weight: 600;
+section[data-testid="stSidebar"]
+div[role="radiogroup"] label:has(input:checked) {
+    background: var(--purple-main);
+    color: white;
 }
 
-div[data-testid="stMetricValue"] {
-    color: #20243A;
-    font-size: 27px;
-    font-weight: 750;
+section[data-testid="stSidebar"]
+div[role="radiogroup"] label:has(input:checked) * {
+    color: white;
 }
 
-/* ======================================
-   CONTENT CONTAINERS
-====================================== */
+/* Heading */
 
-div[data-testid="stVerticalBlockBorderWrapper"] {
-    background-color: #FFFFFF;
-    border: 1px solid #E9ECF4;
-    border-radius: 16px;
-    box-shadow: 0 4px 16px rgba(32, 36, 58, 0.035);
+h1, h2, h3 {
+    color: var(--text-main);
 }
 
-/* ======================================
-   FILTERS AND BUTTONS
-====================================== */
-
-.stSelectbox, .stDateInput {
-    border-radius: 10px;
-}
+/* Buttons */
 
 .stButton > button {
-    background-color: #6659D9;
-    color: #FFFFFF;
-    border: none;
+    background: var(--purple-main);
+    color:white;
+    border:none;
+    border:none;
     border-radius: 10px;
-    font-weight: 600;
-    padding: 9px 18px;
 }
 
 .stButton > button:hover {
-    background-color: #5144C2;
-    color: #FFFFFF;
-    border: none;
+    background: var(--purple-dark);
+    color: white;
 }
 
-/* ======================================
-   DATA TABLE
-====================================== */
 
-div[data-testid="stDataFrame"] {
-    border: 1px solid #E9ECF4;
-    border-radius: 12px;
+/* KPI CARDS */
+
+.kpi-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 88px;
+    padding: 12px 10px;
+    background: #FFFFFF;
+    border: 1px solid #E9E3F5;
+    border-radius: 13px;
+    box-shadow: 0 2px 7px rgba(80, 60, 120, 0.05);
 }
 
-/* ======================================
-   DIVIDER
-====================================== */
-
-hr {
-    border-color: #E6E9F1;
-}
-
-/* ======================================
-   FOOTER
-====================================== */
-
-.dashboard-footer {
-    color: #9298AC;
+.kpi-icon {
+    font-size: 25px;
+    min-width: 30px;
     text-align: center;
-    font-size: 12px;
-    padding: 20px 0;
+}
+
+.kpi-content {
+    min-width: 0;
+}
+
+.kpi-label {
+    font-size: 11px;
+    color: #77718A;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.kpi-value {
+    font-size: 19px;
+    font-weight: 700;
+    color: #5635A8;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
+.kpi-caption {
+    font-size: 10px;
+    color: #9992AA;
+    margin-top: 4px;
+}
+
+
+/* Charts */
+
+div[data-testid="stPlotlyChart"] {
+    border-radius: 14px;
+    overflow: hidden;
 }

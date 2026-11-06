@@ -1,4 +1,4 @@
-from db import test_connection
+from db1 import test_connection
 
 try:
     result = test_connection()

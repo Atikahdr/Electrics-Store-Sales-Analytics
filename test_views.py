@@ -1,4 +1,4 @@
-from db import get_data
+from db1 import get_data
 
 views = [
     "product_performance",

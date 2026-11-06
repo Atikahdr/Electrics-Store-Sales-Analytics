@@ -1,9 +1,13 @@
+# ELECTRONIC SALES INTELLIGENCE
+# Main Streamlit Dashboard Application
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from pathlib import Path
+import plotly.graph_objects as go
 
-from db import get_data
+from pathlib import Path
+from db1 import get_data, test_connection
 
 # 1. Page Configuration
 
@@ -15,430 +19,621 @@ st.set_page_config(
 )
 
 
-# 2. Load Custom CSS
+# 2. Load Existing CSS
 
-css_path = Path(__file__).parent / "assets" / "style.css"
+def load_css():
+    css_path = Path("assets/style.css")
 
-with open(css_path, "r", encoding="utf-8") as file:
+    if css_path.exists():
+        with open(css_path, "r", encoding="utf-8") as file:
+            st.markdown(
+                f"<style>{file.read()}</style>",
+                unsafe_allow_html=True
+            )
+    else:
+        st.warning("File assets/style.css not found.")
+
+
+load_css()
+
+
+# 3. Database Connection
+
+@st.cache_data(ttl=300)
+def load_sales_data():
+
+    query = """
+        SELECT
+            order_id,
+            product,
+            quantity_ordered,
+            price_each,
+            order_date,
+            sales,
+            city
+        FROM staging.electronics_sales
+    """
+
+    df = get_data(query)
+
+    df["order_date"] = pd.to_datetime(df["order_date"]) 
+    df["sales"] = pd.to_numeric(df["sales"])
+    df["quantity_ordered"] = pd.to_numeric(
+        df["quantity_ordered"]
+    )   
+
+    return df
+
+
+# 4. City Coordinates for Map
+
+CITY_COORDINATES ={
+    "Atlanta": (33.7490, -84.3880),
+    "Austin": (30.2672, -97.7431),
+    "Boston": (42.3601, -71.0589),
+    "Dallas": (32.7767, -96.7970),
+    "Los Angeles": (34.0522, -118.2437),
+    "New York City": (40.7128, -74.0060),
+    "Portland": (45.5152, -122.6784),
+    "San Francisco": (37.7749, -122.4194),
+    "Seattle": (47.6062, -122.3321)
+}
+
+# 5. Sidebar Navigation
+
+with st.sidebar:
+
     st.markdown(
-        f"<style>{file.read()}</style>",
+        """
+        <div class="sidebar-brand">
+            <h2>ESI.</h2>
+            <p>Electronics Sales Intelligence</p>
+        </div>
+        """,
         unsafe_allow_html=True
     )
 
+    st.markdown("---")
 
-# 3. Colos Palette
+    st.markdown("### Navigation")
 
-NAVY = "#20243A"
-PURPLE = "#6659D9"
-BLUE = "#4789E8"
-TEAL = "#31A99B"
-ORANGE = "#F2A65A"
-MUTED = "#858BA3"
-
-
-# 4. Data Date Range
-
-data_query = """
-SELECT
-    MIN(order_date)::date AS min_date,
-    Max(order_date)::date AS max_date
-FROM staging.electronics_sales;
-"""
-
-date_df = get_data(data_query)
-
-min_date = date_df.loc[0, "min_date"]
-max_date = date_df.loc[0, "max_date"]
-
-
-# 5. SIDEBAR
-
-with st.sidebar:
-    st.markdown("## 📊 Sales Intelligence")
-    st.caption("ELECTRONIC SALES ANALYTICS")
-
-    st.divider()
-
-    st.markdown("### Monthly Analysis")
-    st.write("Explore your sales performance.")
-
-    selected_dates = st.date_input(
-        "Select Date Range",
-        value=(min_date, max_date),
-        min_value=min_date,
-        max_value=max_date
+    selected_page = st.radio(
+        "Navigate",
+        [
+            "Overview",
+            "Sales Report",
+            "Product Insight",
+            "City Insights"
+        ],
+        label_visibility="collapsed"
     )
 
-    st.divider()
+    st.markdown("---")
 
-    st.caption("DATA SOURCE")
-    st.write("PostgreSQL Database")
-    st.caption("electronics_dw")
+    st.markdown("### Data Filter")
 
-    st.divider()
+    date_filter = st.selectbox(
+        "Period",
+        [
+            "All Data",
+            "Today",
+            "This Week",
+            "This Month",
+            "This Year"
+        ],
+        index=0
+    )
 
-    st.caption("PROJECT")
-    st.write("Electronics Sales Intelligence")
-    st.caption("Built with Python & Streamlit")
+    st.markdown("---")
 
-if len(selected_dates) != 2:
-    st.warning("Please select a start date and end date.")
+    st.markdown("### City Filter")
+
+
+# 6. Load Data
+
+try:
+    if not test_connection():
+        st.error("Unable to connect to PostgreSQL.")
+        st.stop()
+
+    df = load_sales_data()
+
+except Exception as error:
+
+    st.error(f"Database error: {error}")
     st.stop()
 
-start_date, end_date = selected_dates
-
-if start_date > end_date:
-    st.error("Start date must be earlier than end date.")
+if df.empty:
+    st.warning("No Sales Data.")
     st.stop()
 
-params = {
-    "start_date": start_date,
-    "end_date": end_date
-}
 
-# 6. Dashboard Header
+# 7. Filter Data
 
-st.title("Monthly Analysis Dashboard")
+# The dataset is historical in nature.
+# Today / Week / Month / Year are calculated based on 
+# the most recent transaction in the dataset.
+
+max_date = df["order_date"].max().normalize()
+
+if date_filter == "Today":
+
+    start_date = max_date
+    end_date = max_date
+
+elif date_filter == "This Week":
+
+    start_date = max_date - pd.Timedelta(
+        days=max_date.weekday()
+    )
+    end_date = max_date
+
+elif date_filter == "This Year":
+
+    start_date = max_date.replace(
+        month=1,
+        day=1
+    )
+    end_date = max_date
+
+else:
+
+    start_date = df["order_date"].min().normalize()
+    end_date = max_date
+
+df = df[
+    (df["order_date"].dt.normalize() >= start_date)
+    &
+    (df["order_date"].dt.normalize() <= end_date)
+].copy()
+
+# City Filter
+
+with st.sidebar:
+
+    city_options = ["All Cities"] + sorted(
+        df["city"].dropna().unique().tolist()
+    )
+
+    selected_city = st.selectbox(
+        "Select City",
+        city_options
+    )
+
+if selected_city != "All Cities":
+
+    df = df[df["city"] == selected_city].copy()
+
+if df.empty:
+    st.warning("There are no transactions for the selectted filter.")
+    st.stop()
+
+
+# 8. Page Header
 
 st.markdown(
-    f"""
-    <p style="color:#858BA3; margin-top:-12px;">
-        Sales performance overview from
-        <b>{start_date}</b> to <b>{end_date}</b>
-    </p>
+    """
+    <div class="page-header">
+        <div>
+            <h1>Electronics Sales Intelligence</h1>
+            <p>Executive Overview & Sales Performance</p>
+        </div>
+    </div>
     """,
     unsafe_allow_html=True
 )
 
-st.divider()
 
-# 7. KPI Section
+# 9. KPI Calculating
 
-kpi_query = """
-SELECT
-    COALESCE(SUM(sales), 0) AS total_sales,
-    COUNT(DISTINCT order_id) AS total_orders,
-    COALESCE(SUM(quantity_ordered), 0) AS total_units,
-    COALESCE(
-        SUM(sales) / NULLIF(COUNT(DISTINCT order_id), 0),0
-    ) AS average_order
+total_sales = df["sales"].sum()
 
-FROM staging.electronics_sales
-WHERE order_date >= CAST(:start_date AS date)
-  AND order_date < CAST(:end_date AS date) + INTERVAL '1 day';
-"""
+total_orders = df["order_id"].nunique()
 
-kpi = get_data(kpi_query, params).iloc[0]
+total_units = df["quantity_ordered"].sum()
 
-total_sales = float(kpi["total_sales"])
-total_orders = int(kpi["total_orders"])
-total_units = int(kpi["total_units"])
-average_order = float(kpi["average_order"])
+total_products = df["product"].nunique()
 
-st.markdown("### Business Overview")
-
-c1, c2, c3, c4 = st.columns(4)
-
-c1.metric("Total Sales", f"${total_sales:,.2f}")
-c2.metric("Total Orders", f"{total_orders:,}")
-c3.metric("Units Sold", f"{total_units:,}")
-c4.metric("Avg. Sales / Order", f"${average_order:,.2f}")
+average_order_value = (
+    total_sales / total_orders
+    if total_orders > 0 else 0
+)
 
 
-# 8. Monthly Sales Analysis
+# 10. KPI Cards
 
-monthly_query = """
-SELECT
-    DATE_TRUNC('month', order_date)::date AS sales_month,
-    SUM(sales) AS total_sales,
-    SUM(quantity_ordered) AS units_sold,
-    COUNT(*) AS transaction_lines
-FROM staging.electronics_sales
-WHERE order_date >= CAST(:start_date AS date)
-  AND order_date < CAST(:end_date AS date) + INTERVAL '1 day'
-GROUP BY DATE_TRUNC('month', order_date)
-ORDER BY sales_month;
-"""
+st.markdown(
+    """
+    <div class="section-title">
+        <h3>Business Overview</h3>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
-monthly_df = get_data(monthly_query, params)
+kpi_data = [
+    {
+        "icon": "💰",
+        "label": "Total Sales",
+        "value": f"{total_sales:,.0f}",
+        "caption": "Total Revenue"
+    },
+    {
+        "icon": "🛒",
+        "label": "Total Orders",
+        "value": f"{total_orders:,}",
+        "caption": "Unique Orders"
+    },
+     {
+        "icon": "📦",
+        "label": "Units Sold",
+        "value": f"{total_units:,.0f}",
+        "caption": "Total Quantity"
+    },
+    {
+        "icon": "📊",
+        "label": "Products",
+        "value": f"{total_products:,}",
+        "caption": "Unique Products"
+    },
+    {
+        "icon": "💵",
+        "label": "Average Order",
+        "value": f"${average_order_value:,.2f}",
+        "caption": "Revenue per Order"
+    }
 
-monthly_df["mom_growth_pct"] = (
-    monthly_df["total_sales"].pct_change() * 100
-).round(2)
+]
 
-st.markdown("### Monthly Sales Analysis")
+kpi_columns = st.columns(5, gap="small")
 
-left, right = st.columns([2, 1])
+for col, kpi in zip(kpi_columns, kpi_data):
+    with col:
+        st.markdown(
+            f"""
+            <div class="kpi-card">
+                <div class="kpi-icon"{kpi['icon']}</div>
+                <div class="kpi-content">
+                    <div class="kpi-label">{kpi['label']}</div>
+                    <div class="kpi-value">{kpi['label']}</div>
+                    <div class="kpi-caption">{kpi['caption']}</div>
 
-with left:
-    with st.container(border=True):
-        st.markdown("### Revenue Trend")
-
-        fig_monthly = px.area(
-            monthly_df,
-            x="sales_month",
-            y="total_sales",
-            markers=True,
-            color_discrete_sequence=[PURPLE]
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
         )
 
-        fig_monthly.update_traces(
-            line=dict(width=3),
-            fillcolor="rgba(102,89,217,0.12)"
-        )
+st.markdown("---")
 
-        fig_monthly.update_layout(
-            height=330,
-            margin=dict(l=10, r=10, t=15, b=10),
-            paper_bgcolor="white",
-            plot_bgcolor="white",
-            font_color=NAVY,
-            xaxis_title=None,
-            yaxis_title="Revenue (USD)",
-            showlegend=False
-        )
+# 11. Geographical Sales Map
 
-        fig_monthly.update_xaxes(showgrid=False)
-        fig_monthly.update_yaxes(
-            gridcolor="#EEF0F6",
-            tickprefix="$",
-            zeroline=False
-        )
+st.markdown(
+    """
+    <div class="section-title">
+        <h3>Geographical Sales Distribution</h3>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
-        st.plotly_chart(
-            fig_monthly,
-            use_container_width=True
-        )
+city_sales = (
+    df.groupby("city", as_index=False)
+    .agg(
+        total_sales=("sales", "sum"),
+        total_units=("quantity_ordered", "sum"),
+        total_orders=("order_id", "nunique")
+    )
+)
 
-with right:
-    with st.container(border=True):
-        st.markdown("### Monthly Growth")
+city_sales["latitude"] = city_sales["city"].map(
+    lambda city: CITY_COORDINATES.get(city, (None, None))[0]
+)
 
-        growth_df = monthly_df.dropna(
-            subset=["mom_growth_pct"]
-        ).copy()
+city_sales["longitude"] = city_sales["city"].map(
+    lambda city: CITY_COORDINATES.get(city, (None, None))[1]
+)
 
-        if not growth_df.empty:
-            fig_growth = px.bar(
-                growth_df,
-                x="sales_month",
-                y="mom_growth_pct",
-                color="mom_growth_pct",
-                color_continuous_scale=["#E78B8B", "#E6E9F1", TEAL]
-            )
+map_data = city_sales.dropna(
+    subset=["latitude", "longitude"]
+)
 
-            fig_growth.update_layout(
-                height=330,
-                margin=dict(l=5, r=5, t=15, b=10),
-                paper_bgcolor="white",
-                plot_bgcolor="white",
-                font_color=NAVY,
-                coloraxis_showscale=False,
-                xaxis_title=None,
-                yaxis_title="Growth (%)"
-            )
+map_data = map_data[map_data["total_sales"] > 0]
 
-            fig_growth.update_xaxes(showgrid=False)
-            fig_growth.update_yaxes(
-                gridcolor="#EEF0F6",
-                zeroline=True,
-                zerolinecolor="#AEB4C5",
-                ticksuffix="%"
-            )
+fig_map = px.scatter_map(
+    map_data,
+    lat="latitude",
+    lon="longitude",
+    size="total_sales",
+    color="total_sales",
+    hover_name="city",
+    hover_data={
+        "total_sales": ":$,.2f",
+        "total_units": True,
+        "total_orders": True,
+        "latitude": False,
+        "longitude": False
+    },
+    color_continuous_scale = [
+        "#E8DFFF",
+        "#B9A4F5",
+        "#8061D9",
+        "#5635A8"
+    ],
+    size_max=35,
+    zoom=3,
+    height=440,
+    map_style="open-street-map"
+)
 
-            st.plotly_chart(
-                fig_growth,
-                use_container_width=True
-            )
-        else:
-            st.info("Not enough monthly data to calculate growth.")
+fig_map.update_layout(
+    margin=dict(l=0, r=0, t=0, b=0),
+    coloraxis_showscale=False,
+    paper_bgcolor="rgba(0,0,0,0)"
+)
 
-
-# 9. Product Performance
-
-product_query = """
-SELECT
-    product,
-    SUM(quantity_ordered) AS units_sold,
-    SUM(sales) AS total_sales
-FROM staging.electronics_sales
-WHERE order_date >= CAST(:start_date AS date)
-  AND order_date < CAST(:end_date AS date) + INTERVAL '1 day'
-GROUP BY product
-ORDER BY total_sales DESC
-LIMIT 10;
-"""
-
-product_df = get_data(product_query, params)
+st.plotly_chart(
+    fig_map,
+    use_container_width=True
+)
 
 
-# 10. City Performance
+# 12. Top 10 Products
 
-city_query = """
-SELECT
-    city,
-    SUM(sales) AS total_sales
-FROM staging.electronics_sales
-WHERE order_date >= CAST(:start_date AS date)
-  AND order_date < CAST(:end_date AS date) + INTERVAL '1 day'
-GROUP BY city
-ORDER BY total_sales DESC;
-"""
+st.markdown("---")
 
-city_df = get_data(city_query, params)
+left_col, right_col = st.columns(
+    [1.5, 1],
+    gap="large"
+)
 
-st.markdown("### Product & City Performance")
+with left_col:
 
-col_product, col_city = st.columns(2)
+    st.markdown(
 
-with col_product:
-    with st.container(border=True):
-        st.markdown("### Top 10 Products")
-
-        fig_product = px.bar(
-            product_df.sort_values("total_sales"),
-            x="total_sales",
-            y="product",
-            orientation="h",
-            color_discrete_sequence=[BLUE]
-        )
-
-        fig_product.update_layout(
-            height=430,
-            margin=dict(l=5, r=10, t=10, b=10),
-            paper_bgcolor="white",
-            plot_bgcolor="white",
-            font_color=NAVY,
-            xaxis_title="Revenue (USD)",
-            yaxis_title=None,
-            showlegend=False
-        )
-
-        fig_product.update_xaxes(
-            gridcolor="#EEF0F6",
-            tickprefix="$"
-        )
-        fig_product.update_yaxes(showgrid=False)
-
-        st.plotly_chart(
-            fig_product,
-            use_container_width=True
-        )
-
-with col_city:
-    with st.container(border=True):
-        st.markdown("### City Performance")
-
-        fig_city = px.bar(
-            city_df.sort_values("total_sales"),
-            x="total_sales",
-            y="city",
-            orientation="h",
-            color_discrete_sequence=[TEAL]
-        )
-
-        fig_city.update_layout(
-            height=430,
-            margin=dict(l=5, r=10, t=10, b=10),
-            paper_bgcolor="white",
-            plot_bgcolor="white",
-            font_color=NAVY,
-            xaxis_title="Revenue (USD)",
-            yaxis_title=None,
-            showlegend=False   
-        )
-
-        fig_city.update_xaxes(
-            gridcolor="#EEF0F6",
-            tickprefix="$"
-        )
-        fig_city.update_yaxes(showgrid=False)
-
-        st.plotly_chart(
-            fig_city,
-            use_container_width=True
-        )
-
-
-# 11. Hour Sales
-
-hourly_query = """
-SELECT
-    EXTRACT(HOUR FROM order_date)::integer AS hour,
-    SUM(sales) AS total_sales,
-    SUM(quantity_ordered) AS units_sold
-FROM staging.electronics_sales
-WHERE order_date >= CAST(:start_date AS date)
-  AND order_date < CAST(:end_date AS date) + INTERVAL '1 day'
-GROUP BY EXTRACT(HOUR FROM order_date)
-ORDER BY hour;
-"""
-
-hourly_df = get_data(hourly_query, params)
-
-st.markdown("### Hourly Sales Analysis")
-
-with st.container(border=True):
-    fig_hourly = px.bar(
-        hourly_df,
-        x="hour",
-        y="total_sales",
-        color_discrete_sequence=[ORANGE]
+        """
+        <div class="section-title">
+            <h3>Top 10 Best Selling Product</h3>
+        </div>
+        """,
+        unsafe_allow_html=True
     )
 
-    fig_hourly.update_layout(
-        height=300,
-        margin=dict(l=10, r=10, t=10, b=10),
-        paper_bgcolor="white",
-        plot_bgcolor="white",
-        font_color=NAVY,
-        xaxis_title="Hour of Day",
-        yaxis_title="Revenue (USD)",
-        showlegend=False
+    top_products = (
+        df.groupby("product", as_index=False)
+        .agg(
+            total_sales=("sales", "sum"),
+            units_sold=("quantity_ordered", "sum")
+        )
+        .sort_values(
+            "total_sales",
+            ascending=False
+        )
+        .head(10)
+        .sort_values("total_sales", ascending=True)
     )
 
-    fig_hourly.update_xaxes(
-        tickmode="linear",
-        dtick=1,
-        showgrid=False
+    fig_products = px.bar(
+        top_products,
+        x="total_sales",
+        y="product",
+        orientation="h",
+        text="total_sales",
+        color="total_sales",
+        color_continuous_scale=[
+             "#E8DFFF",
+             "#B9A4F5",
+             "#8061D9",
+             "#5635A8"
+        ],
+        hover_data={
+            "units_sold":True,
+            "total_sales": ":$,.2f"
+        }
     )
 
+    fig_products.update_traces(
+        texttemplate="$%{x:,.0f}",
+        textposition="outside",
+        cliponaxis=False
+    )
 
-    fig_hourly.update_yaxes(
-        gridcolor="#EEF0F6",
-        tickprefix="$"
+    fig_products.update_layout(
+        height=430,
+        showlegend=False,
+        coloraxis_showscale=False,
+        xaxis_title="total_sales ($)",
+        yaxis_title="",
+        margin=dict(l=10, r=50, t=20, b=20),
+        plot_bgcolor="rgba(0,0,0,0)",
+        paper_bgcolor="rgba(0,0,0,0)"
     )
 
     st.plotly_chart(
-        fig_hourly,
+        fig_products,
         use_container_width=True
     )
 
 
-# 12. Monthly Data Table
+# 13. Top 5 Cities
 
-with st.expander("View Monthly Analysis Data"):
-    display_df = monthly_df.copy()
+with right_col:
 
-    display_df["sales_month"] = pd.to_datetime(
-        display_df["sales_month"]
-    ).dt.strftime("%B %Y")
+    st.markdown(
+        """
+        <div class="section-title">
+            <h3>Top 5 Cities by Sales</h3>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    top_cities = (
+        city_sales
+        .sort_values("total_sales", ascending=False)
+        .head(5)
+        .sort_values("total_sales", ascending=True)
+    )
+
+    fig_cities = px.bar(
+        top_cities,
+        x="total_sales",
+        y="city",
+        orientation="h",
+        text="total_sales",
+        color="total_sales",
+        color_continuous_scale=[
+            "#E8DFFF",
+            "#B9A4F5",
+            "#8061D9",
+            "#5635A8"
+        ]
+    )
+
+    fig_cities.update_traces(
+        texttemplate="$%{x:,.0f}",
+        textposition="outside",
+        cliponaxis=False
+    )
+
+    fig_cities.update_layout(
+        height=430,
+        showlegend=False,
+        coloraxis_showscale=False,
+        xaxis_title="Total Sales ($)",
+        yaxis_title="",
+        margin=dict(l=10, r=50, t=20, b=20),
+        plot_bgcolor="rgba(0,0,0,0)",
+        paper_bgcolor="rgba(0,0,0,0)"
+    )
+
+    st.plotly_chart(
+        fig_cities,
+        use_container_width=True
+    )
+     
+
+# 14. Sales Distribution - Pie Chart
+
+st.markdown("---")
+
+pie_col, summart_col = st.columns(
+    [1, 1.5],
+    gap="large"
+)
+
+with pie_col:
+
+    st.markdown(
+        """
+        <div class="section-title">
+            <h3>Sales Distribution</h3>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    product_distribution = (
+        df.groupby("product", as_index=False)["sales"]
+        .sum()
+        .sort_values("sales", ascending=False)
+    )
+
+    top_5_distribution = product_distribution.head(5).copy()
+
+    other_sales = (
+        product_distribution.iloc[5:]["sales"].sum()
+    )
+
+    if other_sales > 0:
+
+        top_5_distribution = pd.concat(
+            [
+                top_5_distribution,
+                pd.DataFrame(
+                    [{
+                        "product": "Other Products",
+                        "sales": other_sales
+                    }]
+                )
+            ],
+            ignore_index=True
+        )
+
+    fig_pie = px.pie(
+        top_5_distribution,
+        names="product",
+        values="sales",
+        hole=0.55,
+        color_discrete_sequence=[
+            "#5635A8",
+            "#8061D9",
+            "#A58CEB",
+            "#C6B5F5",
+            "#DED3FA",
+            "#EEE8FF"
+        ]
+    )
+
+    fig_pie.update_traces(
+        textposition="inside",
+        textinfo="percent"
+    )
+
+    fig_pie.update_layout(
+        height=400,
+        margin=dict(l=10, r=10, t=20, b=20),
+        legend_title_text=""
+    )
+
+    st.plotly_chart(
+        fig_pie,
+        use_container_width=True
+    )
+
+# 15. Sales Summary
+
+with summart_col:
+
+    st.markdown(
+        """
+        <div class="section-title">
+            <h3>Sales Performance Summary</h3>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    summary_data = (
+        df.groupby("city", as_index=False)
+        .agg(
+            total_sales=("sales", "sum"),
+            total_orders=("order_id", "nunique"),
+            units_sold=("quantity_ordered", "sum")
+        )
+        .sort_values("total_sales", ascending=False)
+    )
+
+    summary_data["total_sales"] = (
+        summary_data["total_sales"].map(
+            lambda value: f"${value:,.2f}"
+        )
+    )
 
     st.dataframe(
-        display_df,
+        summary_data,
         use_container_width=True,
-        hide_index=True
+        hide_index=True,
+        height=350
     )
 
 
-# 13. Footer
+# 16. Footer
 
-st.markdown(
-    """
-    <div class="dashboard-footer">
-        Electronics Sales Intelligence |
-        PostgreSQL · Python · Streamlit
-    </div>
-    """,
-    unsafe_allow_html=True
+st.markdown("---")
+
+st.caption(
+    "Electronics Sales Intelligence | "
+    "Data Source: PostgreSQL | "
+    "Built with Streamlit & Python"
 )
