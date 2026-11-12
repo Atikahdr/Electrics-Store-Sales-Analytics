@@ -65,21 +65,7 @@ def load_sales_data():
     return df
 
 
-# 4. City Coordinates for Map
-
-CITY_COORDINATES ={
-    "Atlanta": (33.7490, -84.3880),
-    "Austin": (30.2672, -97.7431),
-    "Boston": (42.3601, -71.0589),
-    "Dallas": (32.7767, -96.7970),
-    "Los Angeles": (34.0522, -118.2437),
-    "New York City": (40.7128, -74.0060),
-    "Portland": (45.5152, -122.6784),
-    "San Francisco": (37.7749, -122.4194),
-    "Seattle": (47.6062, -122.3321)
-}
-
-# 5. Sidebar Navigation
+# 4. Sidebar Navigation
 
 with st.sidebar:
 
@@ -129,7 +115,7 @@ with st.sidebar:
     st.markdown("### City Filter")
 
 
-# 6. Load Data
+# 5. Load Data
 
 try:
     if not test_connection():
@@ -148,7 +134,7 @@ if df.empty:
     st.stop()
 
 
-# 7. Filter Data
+# 6. Filter Data
 
 # The dataset is historical in nature.
 # Today / Week / Month / Year are calculated based on 
@@ -209,7 +195,7 @@ if df.empty:
     st.stop()
 
 
-# 8. Page Header
+# 7. Page Header
 
 st.markdown(
     """
@@ -224,7 +210,8 @@ st.markdown(
 )
 
 
-# 9. KPI Calculating
+
+# 8. KPI Calculating
 
 total_sales = df["sales"].sum()
 
@@ -240,7 +227,7 @@ average_order_value = (
 )
 
 
-# 10. KPI Cards
+# 9. KPI Cards
 
 st.markdown(
     """
@@ -252,61 +239,31 @@ st.markdown(
 )
 
 kpi_data = [
-    {
-        "icon": "💰",
-        "label": "Total Sales",
-        "value": f"{total_sales:,.0f}",
-        "caption": "Total Revenue"
-    },
-    {
-        "icon": "🛒",
-        "label": "Total Orders",
-        "value": f"{total_orders:,}",
-        "caption": "Unique Orders"
-    },
-     {
-        "icon": "📦",
-        "label": "Units Sold",
-        "value": f"{total_units:,.0f}",
-        "caption": "Total Quantity"
-    },
-    {
-        "icon": "📊",
-        "label": "Products",
-        "value": f"{total_products:,}",
-        "caption": "Unique Products"
-    },
-    {
-        "icon": "💵",
-        "label": "Average Order",
-        "value": f"${average_order_value:,.2f}",
-        "caption": "Revenue per Order"
-    }
-
+    ("💰", "Total Sales", f"${total_sales:,.0f}", "Total Revenue"),
+    ("🛒", "Total Orders", f"{total_orders:,}", "Unique Orders"),
+    ("📦", "Units Sold", f"{total_units:,.0f}", "Total Quantity"),
+    ("📊", "Products", f"{total_products:,}", "Unique Products"),
+    ("💵", "Average Order", f"${average_order_value:,.2f}", "Revenue per Order")
 ]
 
 kpi_columns = st.columns(5, gap="small")
 
-for col, kpi in zip(kpi_columns, kpi_data):
+for col, (icon, label, value, caption) in zip(kpi_columns, kpi_data):
     with col:
         st.markdown(
-            f"""
-            <div class="kpi-card">
-                <div class="kpi-icon"{kpi['icon']}</div>
-                <div class="kpi-content">
-                    <div class="kpi-label">{kpi['label']}</div>
-                    <div class="kpi-value">{kpi['label']}</div>
-                    <div class="kpi-caption">{kpi['caption']}</div>
-
-                </div>
-            </div>
-            """,
+            f'<div class="kpi-card">'
+            f'<div class="kpi-icon">{icon}</div>'
+            f'<div class="kpi-content">'
+            f'<div class="kpi-label">{label}</div>'
+            f'<div class="kpi-value">{value}</div>'
+            f'<div class="kpi-caption">{caption}</div>'
+            f'</div></div>',
             unsafe_allow_html=True
         )
 
 st.markdown("---")
 
-# 11. Geographical Sales Map
+# 10. Geographical Sales Map
 
 st.markdown(
     """
@@ -317,6 +274,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+# CITY SALES DATA
+
 city_sales = (
     df.groupby("city", as_index=False)
     .agg(
@@ -326,59 +285,240 @@ city_sales = (
     )
 )
 
+# City Coordinates for Map
+
+city_coordinates = {
+    "Atlanta": (33.7490, -84.3880),
+    "Austin": (30.2672, -97.7431),
+    "Boston": (42.3601, -71.0589),
+    "Dallas": (32.7767, -96.7970),
+    "Los Angeles": (34.0522, -118.2437),
+    "New York City": (40.7128, -74.0060),
+    "Portland": (45.5152, -122.6784),
+    "San Francisco": (37.7749, -122.4194),
+    "Seattle": (47.6062, -122.3321)
+}
+
 city_sales["latitude"] = city_sales["city"].map(
-    lambda city: CITY_COORDINATES.get(city, (None, None))[0]
+    lambda x: city_coordinates.get(x, (None, None))[0]
 )
 
 city_sales["longitude"] = city_sales["city"].map(
-    lambda city: CITY_COORDINATES.get(city, (None, None))[1]
+    lambda x: city_coordinates.get(x, (None, None))[1]
 )
 
-map_data = city_sales.dropna(
-    subset=["latitude", "longitude"]
-)
-
-map_data = map_data[map_data["total_sales"] > 0]
-
-fig_map = px.scatter_map(
-    map_data,
-    lat="latitude",
-    lon="longitude",
-    size="total_sales",
-    color="total_sales",
-    hover_name="city",
-    hover_data={
-        "total_sales": ":$,.2f",
-        "total_units": True,
-        "total_orders": True,
-        "latitude": False,
-        "longitude": False
-    },
-    color_continuous_scale = [
-        "#E8DFFF",
-        "#B9A4F5",
-        "#8061D9",
-        "#5635A8"
-    ],
-    size_max=35,
-    zoom=3,
-    height=440,
-    map_style="open-street-map"
-)
-
-fig_map.update_layout(
-    margin=dict(l=0, r=0, t=0, b=0),
-    coloraxis_showscale=False,
-    paper_bgcolor="rgba(0,0,0,0)"
-)
-
-st.plotly_chart(
-    fig_map,
-    use_container_width=True
-)
+# Two-column layout
+col_chart, pie_col = st.columns([1.5, 1], gap="medium")
 
 
-# 12. Top 10 Products
+# LEFT: SALES BY CITY
+
+with col_chart:
+
+    st.markdown(
+        """
+        <div class="section-title">
+            <h3>Monthly Sales Trend</h3>
+        </div>
+        <p class="section-caption">
+            Monthly revenue performance
+        </p>
+        """,
+        unsafe_allow_html=True
+    )
+
+    monthly_trend = (
+        df.assign(
+            order_date=pd.to_datetime(df["order_date"])
+        )
+        .groupby(
+            pd.Grouper(
+                key="order_date",
+                freq="MS"
+            )
+        )
+        .agg(
+            total_sales=("sales", "sum")
+        )
+        .reset_index()
+    )
+
+    fig_trend = px.line(
+        monthly_trend,
+        x="order_date",
+        y="total_sales",
+        markers=True,
+        color_discrete_sequence=["#8061D9"]
+    )
+
+    fig_trend.update_traces(
+        line=dict(width=3),
+        marker=dict(size=8),
+        fill="tozeroy",
+        fillcolor="rgba(128,97,217,0.10)",
+        hovertemplate=
+        "%{x|%B %Y}<br>" +
+        "Sales: $%{y:,.2f}<extra></extra>"
+    )
+
+    fig_trend.update_layout(
+        height=390,
+        margin=dict(l=10, r=20, t=15, b=15),
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        showlegend=False,
+        font=dict(
+            family="Arial",
+            color="#353B50"
+        ),
+        xaxis=dict(
+            title=None,
+            showgrid=False
+        ),
+        yaxis=dict(
+            title=None,
+            showgrid=True,
+            gridcolor="#EAE3F7",
+            tickprefix="$",
+            tickformat="~s"
+        )
+    )
+
+    st.plotly_chart(
+        fig_trend,
+        use_container_width=True,
+        config={"displayModeBar":False}
+    )
+
+
+# RIGHT: SALES DISTRIBUTION PIE
+
+with pie_col:
+
+    st.markdown(
+        """
+        <div class="section-title">
+            <h3>Sales Distribution</h3>
+        </div>
+        <p class="section-caption">
+            Revenue contribution by product category
+        </p>
+        """,
+        unsafe_allow_html=True
+    )
+
+    product_distribution = (
+        df.groupby("product", as_index=False)["sales"]
+        .sum()
+        .sort_values("sales", ascending=False)
+    )
+
+    top_5_distribution = product_distribution.head(5).copy()
+
+    other_sales = (
+        product_distribution.iloc[5:]["sales"].sum()
+    )
+
+    if other_sales > 0:
+
+        top_5_distribution = pd.concat(
+            [
+                top_5_distribution,
+                pd.DataFrame(
+                    [{
+                        "product": "Other Products",
+                        "sales": other_sales
+                    }]
+                )
+            ],
+            ignore_index=True
+        )
+
+    fig_pie = px.pie(
+        top_5_distribution,
+        names="product",
+        values="sales",
+        hole=0.55,
+        color_discrete_sequence=[
+            "#5635A8",
+            "#8061D9",
+            "#A58CEB",
+            "#C6B5F5",
+            "#DED3FA",
+            "#EEE8FF"
+        ]
+    )
+
+    fig_pie.update_traces(
+        textposition="inside",
+        textinfo="percent",
+        textfont=dict(
+            size=12,
+            color="#FFFFFF"
+        ),
+        marker=dict(
+            line=dict(
+                color="#F3EDFF",
+                width=3
+            )
+        ),
+        hovertemplate=(
+            "<b>%{label}</br><br>"
+            "Sales: $%{value:,.2f}<br>"
+            "Share: %{percent}"
+            "<extra></extra>"
+        )
+    )
+
+    fig_pie.update_layout(
+        height=400,
+
+        # Light purple background
+        paper_bgcolor="#F3EDFF",
+        plot_bgcolor="#F3EDFF",
+
+        # Pie chart position: centered and slightly upper
+        xaxis=dict(
+            domain=[0.12, 0.88]
+        ),
+
+        yaxis=dict(
+            domain=[0.30, 1]
+        ),
+
+        # Legend below in 2 columns
+        legend=dict(
+            title_text="",
+            orientation="h",
+            x=0.5,
+            y=0,
+            xanchor="center",
+            yanchor="top",
+            entrywidth=0.35,
+            entrywidthmode="fraction",
+            font=dict(
+                size=10,
+                color="#49396C"
+            ),
+            bgcolor="rgba(0,0,0,0)"
+        ),
+
+        margin=dict(l=15, r=15, t=15, b=10),
+
+        font=dict(
+            family="Arial",
+            color="#352B50"
+        )
+    )
+
+    st.plotly_chart(
+        fig_pie,
+        use_container_width=True,
+        config={"displayModeBar": False}
+    )
+
+
+# 11. Top 10 Products
 
 st.markdown("---")
 
@@ -455,7 +595,7 @@ with left_col:
     )
 
 
-# 13. Top 5 Cities
+# 12. Top 5 Cities
 
 with right_col:
 
@@ -513,85 +653,78 @@ with right_col:
     )
      
 
-# 14. Sales Distribution - Pie Chart
+# 13. Sales Distribution - Pie Chart
 
 st.markdown("---")
 
-pie_col, summart_col = st.columns(
+col_map, summart_col = st.columns(
     [1, 1.5],
     gap="large"
 )
 
-with pie_col:
 
-    st.markdown(
-        """
-        <div class="section-title">
-            <h3>Sales Distribution</h3>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+with col_map:
 
-    product_distribution = (
-        df.groupby("product", as_index=False)["sales"]
-        .sum()
-        .sort_values("sales", ascending=False)
-    )
+    st.markdown("### Sales Distribution Map")
+    st.caption("Explore sales locations by city")
 
-    top_5_distribution = product_distribution.head(5).copy()
 
-    other_sales = (
-        product_distribution.iloc[5:]["sales"].sum()
-    )
+    map_data = city_sales.dropna(
+        subset=["latitude", "longitude"]
+    ).copy()
 
-    if other_sales > 0:
+    map_data = map_data[
+        map_data["total_sales"] > 0
+    ]
 
-        top_5_distribution = pd.concat(
-            [
-                top_5_distribution,
-                pd.DataFrame(
-                    [{
-                        "product": "Other Products",
-                        "sales": other_sales
-                    }]
-                )
+    if not map_data.empty:
+
+        # Create map
+        fig_map = px.scatter_map(
+            map_data,
+            lat="latitude",
+            lon="longitude",
+            size="total_sales",
+            color="total_sales",
+            hover_name="city",
+            hover_data={
+                "total_sales": ":$,.2f",
+                "total_units": True,
+                "total_orders": True,
+                "latitude": False,
+                "longitude": False
+            },
+            color_continuous_scale=[
+                "#E8DFFF",
+                "#B9A4F5",
+                "#8061D9",
+                "#5635A8"
             ],
-            ignore_index=True
+            size_max=42,
+            height=350,
+            map_style="open-street-map"
         )
 
-    fig_pie = px.pie(
-        top_5_distribution,
-        names="product",
-        values="sales",
-        hole=0.55,
-        color_discrete_sequence=[
-            "#5635A8",
-            "#8061D9",
-            "#A58CEB",
-            "#C6B5F5",
-            "#DED3FA",
-            "#EEE8FF"
-        ]
-    )
+        fig_map.update_layout(
+            margin=dict(l=0, r=0, t=0, b=0),
+            coloraxis_showscale=False,
+            paper_bgcolor="rgba(0,0,0,0)",
+            font=dict(color="#352B50")
+        )
 
-    fig_pie.update_traces(
-        textposition="inside",
-        textinfo="percent"
-    )
+        st.plotly_chart(
+            fig_map,
+            use_container_width=True,
+            config={
+                "displayModeBar": False,
+                "scrollZoom": True
+            }
+        )
 
-    fig_pie.update_layout(
-        height=400,
-        margin=dict(l=10, r=10, t=20, b=20),
-        legend_title_text=""
-    )
+    else:
+        st.info("No geographical data available.")
 
-    st.plotly_chart(
-        fig_pie,
-        use_container_width=True
-    )
-
-# 15. Sales Summary
+# 14. Sales Summary
 
 with summart_col:
 
@@ -628,7 +761,7 @@ with summart_col:
     )
 
 
-# 16. Footer
+# 15. Footer
 
 st.markdown("---")
 
